@@ -1,0 +1,921 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+  
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-container {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -330px;
+
+}
+
+.toggle-container input[type=checkbox] {
+  display: none;
+}
+
+.toggle-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.toggle-container label:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #a68383;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #000000;
+  color: white;
+}
+
+.toggle-container input[type=checkbox]:checked + label {
+  background-color: #ffffff;
+}
+
+.toggle-container input[type=checkbox]:checked + label:before {
+  transform: translateX(20px);
+}
+
+    /* BUTTON DE CAMBIAR EL COLOR A MI GUSTO DEL STYLE DEL HOVER */
+
+#color-button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 10px;
+    margin-top: -260px;
+  }
+  
+  #color-button.color-off {
+    background-color: #808080;
+    color: #ffffff;
+  }
+  
+  #color-button.color-off:hover {
+    background-color: #555;
+  }
+
+
+  
+    /* REFERENCIAS DE CECYTEM JUNTO CON EL NUMERO DEL EQUPO */
+  
+  .cecy img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: 250px;
+  }
+
+  .cecy h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: 470px;
+   }
+
+   .num5 img{
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 640px;
+    margin-top: -270px;
+   }
+
+   /* copyright  */
+
+   .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(66, 66, 77);
+    color: white;
+    text-align: center;
+  }
+
+  .dark-mode .footer {
+    background: linear-gradient(240deg, rgb(114, 47, 55), rgb(85, 37, 44));
+    color: rgb(255, 255, 255);
+  }
+  
+  .derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .copyright label{
+    font-size: 18px;
+    margin-left: -800px; /* Determina la posicion del txt copyright junto con los botones  */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    min-width: 160px;
+    white-space: nowrap;
+    top: 0px; /* determina la distancia en horizontal los correos */
+    right: 0;
+    left: 93px; /* Se agrega el apartado de la distancia los correos con el contactanos */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: inherit;
+    color: rgb(81, 255, 0);
+    padding: 0;
+    border: none;
+    height: 61px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 25px 16px; /* Determina el tamano del button del los correos */
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #858585;
+  }
+
+  /* EL .dark-mode determina el color cuando el tema este cambiado de color black */
+  .dark-mode .dropdown-content a:hover{
+    background-color: rgb(1, 0, 0);
+    color: white;
+  }
+  
+  
+  
+
+  /* LISTA DE LOS INEGRANTES DE LOS EQUIPOS */
+
+  .equipo{
+    width: 400px;
+    height: 110px;
+    justify-content: center;
+    background: rgb(94, 92, 92);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-160%, -300%);
+  }
+
+  .integrantes{
+    font-size: 11px;
+    color: white;
+  }
+
+
+.ecologia{
+
+    width: 250px;
+    height: 400px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -40%);
+    border-radius: 25px;
+}
+
+.ecologia img{
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+:not(.color-off) .ecologia:hover {
+    background: linear-gradient(250deg, #33cc33, rgba(0, 208, 255, 0.712) );
+   /*  background-color: #33cc33; */
+}
+
+.btn{
+
+    background: linear-gradient(250deg,  rgba(0, 208, 255, 0.712), #33cc33); 
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    font-family: fantasy;
+    color: blue;
+    margin-top: 55px;
+}
+
+
+
+
+.calculo{
+
+    width: 250px;
+    height: 400px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-280%, -40%);
+    border-radius: 25px;
+}
+
+:not(.color-off) .calculo:hover{
+    background: linear-gradient(250deg, red, blue);
+}
+
+.calculo img{
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.btn2{
+
+    background: linear-gradient(250deg, red, blue);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    font-family: fantasy;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+.ingles{
+
+    width: 250px;
+    height: 400px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, -40%);
+    border-radius: 25px;
+    
+}
+
+:not(.color-off) .ingles:hover{
+    background: linear-gradient(360deg, white, red, white,
+     red, white,
+      red, white,
+       red, white,
+       blue, white, blue, white);
+}
+
+.ingles img{
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.btn3{
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+    rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+    rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+    rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+      blue, white, blue, white);
+      font-size: 18px;
+      color: rgb(0, 38, 255);
+      font-family: fantasy;
+      cursor: pointer;
+      margin-top: 55px;
+}
+
+
+
+
+.fisica{
+
+    width: 250px;
+    height: 400px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(170%, -40%);
+    border-radius: 25px;
+
+}
+
+.fisica img{
+
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+:not(.color-off) .fisica:hover{
+    background: linear-gradient(300deg, red, green, blue, orangered,
+     red, green, blue, orange);
+}
+
+:not(.color-off) .btn4{
+    background: linear-gradient(300deg, rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 68, 0, 0.638),
+    rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 166, 0, 0.638));
+    font-size: 18px;    
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    font-family: fantasy;
+    cursor: pointer;
+    color: white;
+    margin-top: 55px;
+}
+
+
+
+
+
+@media  (min-width: 199px) and (max-width: 1300px) {
+    .calculo {
+      width: 250px;
+      height: 350px;
+      background: rgba(128, 128, 128, 0.689);
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-180%, -30%);
+      border-radius: 25px;
+    }
+  
+    :not(.color-off) .calculo:hover {
+      background: linear-gradient(250deg, red, blue);
+    }
+  
+    .calculo img {
+      width: 150px;
+      height: 150px;
+      margin-top: 15px;
+    }
+  
+    .btn2 {
+      background: linear-gradient(250deg, red, blue);
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 200px;
+      height: 30px;
+      font-family: fantasy;
+      color: white;
+      margin-top: 20px;
+    }
+
+
+  
+    .ecologia {
+      width: 250px;
+      height: 350px;
+      background: rgba(128, 128, 128, 0.689);
+      position: absolute;
+      justify-content: center;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-65%, -30%);
+      border-radius: 25px;
+    }
+  
+    .ecologia img {
+      width: 150px;
+      height: 150px;
+      margin-top: 15px;
+    }
+  
+    :not(.color-off) .ecologia:hover {
+      background: linear-gradient(250deg, #33cc33, rgba(0, 208, 255, 0.712));
+    }
+  
+    .btn {
+      background: linear-gradient(250deg, rgba(0, 208, 255, 0.712), #33cc33);
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 200px;
+      height: 30px;
+      font-family: fantasy;
+      color: blue;
+      margin-top: 55px;
+    }
+
+
+
+    .fisica{
+
+        width: 250px;
+        height: 350px;
+        background: rgba(128, 128, 128, 0.689);
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(165%, -30%);
+        border-radius: 25px;
+    
+    }
+    
+    .fisica img{
+    
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+    }
+    
+    :not(.color-off) .fisica:hover{
+        background: linear-gradient(300deg, red, green, blue, orangered,
+         red, green, blue, orange);
+    }
+    
+    :not(.color-off) .btn4{
+        background: linear-gradient(300deg, rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 68, 0, 0.638),
+        rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 166, 0, 0.638));
+        font-size: 18px;    
+        width: 200px;
+        height: 30px;
+        border-radius: 25px;
+        font-family: fantasy;
+        cursor: pointer;
+        color: white;
+        margin-top: 55px;
+    }
+
+
+
+    .ingles{
+
+        width: 250px;
+        height: 350px;
+        background: rgba(128, 128, 128, 0.689);
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(50%, -30%);
+        border-radius: 25px;
+        
+    }
+    
+    :not(.color-off) .ingles:hover{
+        background: linear-gradient(360deg, white, red, white,
+         red, white,
+          red, white,
+           red, white,
+           blue, white, blue, white);
+    }
+    
+    .ingles img{
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+    }
+    
+    .btn3{
+        width: 200px;
+        height: 30px;
+        border-radius: 25px;
+        background: linear-gradient(360deg, rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+          blue, white, blue, white);
+          font-size: 18px;
+          color: rgb(0, 38, 255);
+          font-family: fantasy;
+          cursor: pointer;
+          margin-top: 55px;
+    }
+
+
+
+    .cecy img{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -300px;
+        margin-left: 300px;
+      }
+    
+      .cecy h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -260px;
+        margin-left: 470px;
+       }
+    
+       .num5 img{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 640px;
+        margin-top: -220px;
+       }
+
+
+       .equipo{
+        width: 400px;
+        height: 110px;
+        justify-content: center;
+        background: rgb(94, 92, 92);
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-110%, -270%);
+      }
+    
+
+      .toggle-container {
+        position: absolute;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        margin: 20px;
+        top: 50%;
+        left: 50%;
+        margin-left: 80px;
+        margin-top: -290px;
+      
+      }
+
+
+      #color-button {
+        background-color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 15px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 105px;
+        margin-top: -220px;
+      }
+
+
+
+      .copyright label{
+        font-size: 15px;
+        margin-left: -750px; /* Determina la posicion del txt copyright junto con los botones  */
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        background: transparent;
+        min-width: 160px;
+        white-space: nowrap;
+        top: 0px; /* determina la distancia en horizontal los correos */
+        right: 0;
+        left: 93px; /* Se agrega el apartado de la distancia los correos con el contactanos */
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: inline-block;
+      }
+      
+      .dropbtn {
+        background-color: inherit;
+        color: rgb(81, 255, 0);
+        padding: 0;
+        border: none;
+        height: 61px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 25px 4px; /* Determina el tamano del button del los correos */
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #858585;
+      }
+    
+      /* EL .dark-mode determina el color cuando el tema este cambiado de color black */
+      .dark-mode .dropdown-content a:hover{
+        background-color: rgb(1, 0, 0);
+        color: white;
+      }
+      
+      
+
+
+  }
+  
+
+
+
+ @media  (min-width: 399px) and (max-width: 694px){
+/*     body {
+        text-align: center;
+        background-image: url("https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/images/CUAUTITL%C3%81N.jpg");
+        background-size: 700px 703px; */
+    /*  background-position: -50px 0px;
+        background-repeat: no-repeat; */
+    /* } 
+     background-position: center;
+        margin-top: 45%;
+    */
+
+    .salir{
+        border-radius: 25px;
+        height: 25px;
+        width: 28%;
+        margin-top: 25px;
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    .salir:hover{
+        background: rgba(255, 0, 0, 0.582);
+    }
+    
+    .name{
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    .centrar{
+        margin-top: 40%;
+    }
+    .ecologia{
+
+        width: 190px;
+        height: 250px;
+        background: rgba(128, 128, 128, 0.689);
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%, 10%);
+        border-radius: 25px;
+    }
+    
+    .ecologia img{
+        width: 90px;
+        height: 90px;
+        margin-top: 15px;
+    }
+    
+    .ecologia:hover {
+        background: linear-gradient(250deg, #33cc33, rgba(0, 208, 255, 0.712) );
+       /*  background-color: #33cc33; */
+        color: #fff;
+    }
+    
+    .btn{
+    
+        background: linear-gradient(250deg,  rgba(0, 208, 255, 0.712), #33cc33); 
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 18px;
+        width: 145px;
+        height: 30px;
+        font-family: fantasy;
+        color: blue;
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       
+    }
+    
+    
+    
+    
+    .calculo{
+        width: 190px;
+        height: 250px;
+        background: rgba(128, 128, 128, 0.689);
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%, -110%);
+        border-radius: 25px;
+        
+    }
+    
+    .calculo:hover{
+        background: linear-gradient(250deg, red, blue);
+    }
+    
+    .calculo img{
+        width: 90px;
+        height: 90px;
+        margin-top: 15px;
+    }
+    
+    .btn2{
+        background: linear-gradient(250deg, red, blue);
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 12px;
+        width: 145px;
+        height: 30px;
+        font-family: fantasy;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+    
+    
+    .ingles{
+    
+        width: 190px;
+        height: 250px;
+        background: rgba(128, 128, 128, 0.689);
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(20%, 10%);
+        border-radius: 25px;
+        
+    }
+    
+    .ingles:hover{
+        background: linear-gradient(360deg, white, red, white,
+         red, white,
+          red, white,
+           red, white,
+           blue, white, blue, white);
+    }
+    
+    .ingles img{
+        width: 90px;
+        height: 90px;
+        margin-top: 15px;
+    }
+    
+    .btn3{
+        width: 145px;
+        height: 30px;
+        border-radius: 25px;
+        background: linear-gradient(360deg, rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+          blue, white, blue, white);
+          font-size: 18px;
+          color: rgb(0, 38, 255);
+          font-family: fantasy;
+          cursor: pointer;
+          font-size: 15px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+         
+    }
+    
+    
+    
+    
+    .fisica{
+    
+        width: 190px;
+        height: 250px;
+        background: rgba(128, 128, 128, 0.689);
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(20%, -110%);
+        border-radius: 25px;
+    
+    
+    }
+    
+    .fisica img{
+    
+        width: 90px;
+        height: 90px;
+        margin-top: 15px;
+    }
+    
+    .fisica:hover{
+        background: linear-gradient(300deg, red, green, blue, orangered,
+         red, green, blue, orange);
+    }
+    
+    .btn4{
+        background: linear-gradient(300deg, rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 68, 0, 0.638),
+        rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 166, 0, 0.638));
+        font-size: 18px;
+        width: 145px;
+        height: 30px;
+        border-radius: 25px;
+        font-family: fantasy;
+        cursor: pointer;
+        color: white;
+        font-size: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+}
+
+
+
+
