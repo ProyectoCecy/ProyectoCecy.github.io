@@ -5,8 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ingles</title>
-    <link rel="stylesheet" href="../Style/ingles.css">
+    <link rel="stylesheet" href="../Style/ingles3.css">
 
+    <style>
+
+      .slide  input {
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+/*     width: 190px;
+    height: 40px; */
+    border: none;
+    color: rgb(20, 0, 0);
+    /* color dorado: #FFD700 */
+    background-size: 400%;
+    font-family: sans-serif;
+    word-spacing: 2px;
+    animation: decoration 5s linear infinite;
+  }
+
+  .partial1{
+    background: linear-gradient(90deg, #C9B99B, #8C7853,  #8C7853, #C9B99B, #8C7853, #C9B99B);
+  }
+   .partial2{
+    background: linear-gradient(90deg, #B2B2B2, #E5E5E5,  #E5E5E5, #B2B2B2, #E5E5E5, #B2B2B2);
+  }
+  
+  @keyframes decoration {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+
+
+.slider{
+  display: flex;
+/*   height: auto; */
+  margin: auto;
+  overflow: hidden;
+  align-items: center;
+  max-width: 500px; /* reducir el ancho del slider */
+  top: 50%;
+  left: 50%;
+  margin: -110px auto; /* Centrar el contenedor en la página */ /* El margin determino la altura de los botones */
+  height: 200px; /* Altura fija para el contenedor */
+  justify-content: center; /* Centrar el contenido horizontalmente */
+  position: relative;
+  left: 140px; /* Mover el contenedor 100px a la izquierda */
+}
+
+
+
+.slider .slide-track{
+  display: flex;
+  animation: scroll 35s linear infinite;
+  -webkit-animation: scroll 9s linear infinite;
+  width: calc(100% - 220px); /* restar el ancho total de los botones más el margen a la anchura del slider */
+  margin-left: 0px; /* mover las imágenes hacia la izquierda */
+
+}
+
+.slider .slide{
+  display: flex;
+}
+
+.slider .slide input{
+  width: 150px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(69, 69, 69);
+  cursor: pointer;
+  margin-right: 20px; /* reducir el margen entre las imágenes */
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; 
+}
+
+@keyframes scroll{
+  0%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100%{
+    -webkit-transform: translateX(calc(-120px * 5)); /* dividir el ancho de las imágenes entre 2 para obtener el desplazamiento correcto */
+    transform: translateX(calc(-120px * 5));
+  }
+
+
+}
+    </style>
   </head>
   <body>
 
@@ -36,27 +126,29 @@
           <h3 id="nombre-texto">creator of this page: Jorge Daniel</h3>
         </div>        
 
+<!-- En esta linea es del titulo del segundo parcial donde se vera siempre excepto en las ocasiones donde apaerece el titulo de los temas -->
         <div class="title-partial">
-          <h3>First Partial</h3>
+          <h3>Third Partial</h3>
         </div>
-        
+
 
         <div class="slider">
           <div class="slide-track">
         <!--     <div class="slide"> <a href="./ingles.html"><img src="img/PrimerParcial.png" alt=""></a> </div> -->
-            <div class="slide"> <a href="./ingles3.html"><input class="partial3" type="button" value="THIRD Partial"></a> </div>
+            <div class="slide"> <a href="./ingles.html"><input class="partial1" type="button" value="FIRST Partial"></a> </div>
             <div class="slide"> <a href="./ingles2.html"><input class="partial2" type="button" value="SECOND Partial"></div>
-            <div class="slide"> <a href="./ingles3.html"><input class="partial3" type="button" value="THIRD Partial"></a> </div>
+            <div class="slide"> <a href="./ingles.html"><input class="partial1" type="button" value="FIRST Partial"></a> </div>
             <div class="slide"> <a href="./ingles2.html"><input class="partial2" type="button" value="SECOND Partial"></a> </div>
-            <div class="slide"> <a href="./ingles.html"><input class="partial3" type="button" value="THIRD Partial"></a> </div>
+            <div class="slide"> <a href="./ingles.html"><input class="partial1" type="button" value="FIRST Partial"></a> </div>
 
         
         <!--     <div class="slide"> <a href="./ingles.html"><img src="img/PrimerParcial.png" alt=""></a> </div> -->
             <div class="slide"> <a href="./ingles2.html"><input class="partial2" type="button" value="SECOND Partial"></a> </div>
           </div>
         </div>
+        
 
-        <!-- REDES SOCIALES DEL TEACHA -->
+        <!-- redes sociales del teacha -->
 
         <div class="contenedor">
           <h1 class="redes-title">social media of the teacher</h1>
@@ -68,7 +160,7 @@
           </ul>
         </div>
         
-        
+
 
         <!-- AQUI VA EL HOVER PARA VER LOS DEMAS PARCIALES -->
 
@@ -131,12 +223,12 @@
 
       <div class="sidebar">
         <div class="barra2">
-          <h2>topics of first partial</h2>
+          <h2>topics of third partial</h2>
           <button class="menu-btn menu" id="menuBtn" onclick="toggleTopics()">
-          <div class="palito1"></div>
-          <div class="palito2"></div>
-          <div class="palito3"></div>
-          </button>
+            <div class="palito1"></div>
+            <div class="palito2"></div>
+            <div class="palito3"></div>
+            </button>
         </div>
         <ul class="topics-list" id="topicsList">
             <li>
@@ -152,12 +244,13 @@
         </div>
         
 
+
         <!-- primer parcial -->
 
         <div class="espacio-blanco" id="espacio-blanco">
 
           <div class="colaboradores2">
-            students which collaborated in the proyect:
+            Alumnos que colaboraron en este proyecto:
             
               <li>Milton Daniel Contreras Coeto </li>
               <li>Cesar Enrique Tapia Lopez</li> 
