@@ -51,9 +51,6 @@ function calculo(event){
           })
         }
       }) */
-
-
-
 }
 
 
@@ -70,27 +67,142 @@ function fisica(event){
       
 }
 
-const footer = document.getElementById("footer");
+/* La funcion de este codigo hace que se cambie de color el body junto con las cosas que tengan la clase de .dark-mode 
 
-// Obtener el botón de cambio de tema
-const toggleThemeButton = document.getElementById("toggle-theme");
+ const themeLightButton = document.getElementById("theme-light");
+const themeDarkButton = document.getElementById("theme-dark");
 
-// Añadir un event listener al botón
-toggleThemeButton.addEventListener("click", function() {
-  // Cambiar la clase del body para activar el modo oscuro
-  document.body.classList.toggle("dark-mode");
-  
-  // Cambiar el texto del botón
-  if (document.body.classList.contains("dark-mode")) {
-    toggleThemeButton.textContent = "Cambiar a Modo Claro";
+themeLightButton.addEventListener("click", function() {
+  document.documentElement.setAttribute("data-theme", "light");
+  localStorage.setItem("theme", "light");
+});
+
+themeDarkButton.addEventListener("click", function() {
+  document.documentElement.setAttribute("data-theme", "dark");
+  localStorage.setItem("theme", "dark");
+});
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  if (currentTheme === "dark") {
+    themeDarkButton.classList.add("active");
+    document.body.classList.add("dark-mode");
   } else {
-    toggleThemeButton.textContent = "Cambiar a Modo Oscuro";
-    footer.style.background = "rgb(66, 66, 77)";
+    themeLightButton.classList.add("active");
   }
+} else {
+  themeLightButton.classList.add("active");
+}
+
+const toggleButtons = document.querySelectorAll(".theme-button");
+
+toggleButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    toggleButtons.forEach(function(btn) {
+      btn.classList.remove("active");
+    });
+    this.classList.add("active");
+    const theme = this.getAttribute("data-theme");
+    document.documentElement.setAttribute("data-theme", theme);
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  });
+});
+ */
+
+/* En este codigo tiene una similitud pero hace que se vea la imagen de dark mode cuando esta activo el button del tema light y al revez*/
+// Obtener referencias a los elementos relevantes en el HTML
+const themeLightButton = document.getElementById("theme-light");
+const themeDarkButton = document.getElementById("theme-dark");
+const lightImage = document.getElementById("light-image");
+const darkImage = document.getElementById("dark-image");
+
+/* Cosas cuando esta activado el tema light */
+
+// Escuchadores de eventos para los botones de tema
+themeLightButton.addEventListener("click", function() {
+  // Establecer el tema de luz
+  document.documentElement.setAttribute("data-theme", "light");
+  // Guardar la elección del usuario en localStorage
+  localStorage.setItem("theme", "light");
+  // Deshabilitar la imagen de tema de luz y habilitar la de tema oscuro
+  themeLightButton.style.display = "none"
+  lightImage.style.display = "none";
+  /* Aqui habilita el tema dark el button y la imagen que tiene el boton */
+  darkImage.style.display = "block";
+  themeDarkButton.style.display = "block";
+});
+
+/* Cosas cuando este activado el tema de dark */
+
+themeDarkButton.addEventListener("click", function() {
+  // Establecer el tema oscuro
+  document.documentElement.setAttribute("data-theme", "dark");
+  // Guardar la elección del usuario en localStorage
+  localStorage.setItem("theme", "dark");
+  //Habilita los botones del light y la imagen del light cuando esta el tema dark activado
+  themeLightButton.style.display = "block";
+  lightImage.style.display = "block";
+  /* Aqui se quita la imagen del button y se quita el boton */
+  darkImage.style.display = "none";
+  themeDarkButton.style.display = "none"
 });
 
 
+/* Aqui ya es aparte cuando el usuario le de click a un tema */
+// Verificar si el usuario ya ha elegido un tema previamente
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme) {
+  // Establecer el tema y las imágenes correspondientes
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  if (currentTheme === "dark") {
+    themeDarkButton.classList.add("active");
+    document.body.classList.add("dark-mode");
+    /* Aqui es cuando se refresca la pagina y si no hay un boton activado pero esta el tema puesto, hace que se habilite el boton light o dark */
+    themeLightButton.style.display = "block"
+    lightImage.style.display = "block";
+    darkImage.style.display = "none";
+    themeDarkButton.style.display = "none"
+  } else {
+    themeLightButton.classList.add("active");
+    lightImage.style.display = "none";
+    darkImage.style.display = "block";
+  }
+} else {
+  // Establecer el tema de luz y las imágenes correspondientes para la primera visita del usuario
+  themeLightButton.classList.add("active");
+  lightImage.style.display = "none";
+  darkImage.style.display = "block";
+}
 
+// Escuchador de eventos para cada botón de tema
+const toggleButtons = document.querySelectorAll(".theme-button");
+toggleButtons.forEach(function(button) {
+  button.addEventListener("click", function() {
+    // Desactivar todos los botones de tema y luego activar el seleccionado
+    toggleButtons.forEach(function(btn) {
+      btn.classList.remove("active");
+    });
+    this.classList.add("active");
+    // Obtener el tema seleccionado y establecerlo
+    const theme = this.getAttribute("data-theme");
+    document.documentElement.setAttribute("data-theme", theme);
+    // Establecer las imágenes correspondientes para el tema seleccionado
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+      lightImage.style.display = "block";
+      darkImage.style.display = "none";
+    } else {
+      document.body.classList.remove("dark-mode");
+      lightImage.style.display = "none";
+      darkImage.style.display = "block";
+    }
+  });
+});
 
 
 

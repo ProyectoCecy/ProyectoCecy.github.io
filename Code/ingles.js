@@ -12,6 +12,59 @@ function detener(){
 };
  */
 
+const body = document.querySelector('body');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 0) {
+    body.style.height = '130vh';
+  } else {
+    body.style.height = '100vh';
+  }
+});
+
+
+/* EFECTO DE ESCRIBIR PERO PARA QUE SE VEA EL TITULO EN ESCRITURA */
+
+var tit = document.title;
+var c = 0;
+
+function writetitle() {
+  document.title = tit.substring(0, c);
+  if (c == tit.length) {
+    c = 0;
+    setTimeout(writetitle, 1000);
+  } else {
+    c++;
+    setTimeout(writetitle, 200);
+  }
+}
+
+writetitle();
+
+
+/* EFECTO DONDE SE VE COMO SE CREA EL EFECTO DE IR ESCRIBIENDO EN LA PAGINA WEB DE QUIEN HIZO LA PAGINA */
+
+
+var texto = document.getElementById("nombre-texto").textContent;
+var v = 0;
+
+function escribirTexto() {
+  document.getElementById("nombre-texto").textContent = texto.substring(0, v);
+
+  if (v == texto.length) {
+
+    console.log("El texto ha llegado a su fin")
+    return
+  } else {
+    v++;
+    setTimeout(escribirTexto, 100);
+  }
+
+}
+
+escribirTexto();
+
+
+
 
 
 // Obtener los elementos del DOM
@@ -20,6 +73,7 @@ const toggleSidebarButton = document.getElementById('toggle-sidebar');
 const topicsList = document.querySelector('.topics-list');
 const mainContent = document.querySelector('.main-content');
 const espacioBlanco = document.querySelector('.espacio-blanco');
+const titulosDelParcial = document.querySelector('.title-partial');
 
 
 // Añadir el evento click al botón para mostrar/ocultar el sidebar
@@ -52,6 +106,8 @@ function toggleTopics() {
   const topicContents = document.getElementsByClassName('topic-content');
   for (let i = 0; i < topicContents.length; i++) {
     topicContents[i].style.display = 'none';
+    /* Oculta el titulo cuando se escoje un tema */
+    titulosDelParcial.style.display = 'none';
   }
 
 
@@ -59,6 +115,8 @@ function toggleTopics() {
 
   // Oculta el div con la clase "espacio-blanco"
   espacioBlanco.style.display = 'none';
+  // Cuando este oculto el "espacio-blanco". Con el block se mostrara el titulo de primer parcial
+  titulosDelParcial.style.display = 'block';
 }
 
 
@@ -69,8 +127,10 @@ function showTopicContent(topicId) {
   const topicContents = document.getElementsByClassName('topic-content');
   for (let i = 0; i < topicContents.length; i++) {
 
+    /* Oculta el contenido cuando se pasa en temas diferentes*/
     topicContents[i].style.display = 'none';
-
+    /* Oculta el contenido cuando se pasa en temas diferentes, este caso es el titulo */
+    titulosDelParcial.style.display = 'none';
   }
 
 
@@ -96,8 +156,5 @@ function showTopicContent(topicId) {
   // Muestra el div con la clase "espacio-blanco"
   espacioBlanco.style.display = 'block';
 }
-
-
-
 
 

@@ -8,30 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Con la tecla Ctrl+f se abre un buscador donde puedo buscar mas faciles las clases que nombre -->
     
     <!-- ESTE DIV ES PARA ORDENAR TODAS LAS MATERIAS Y MOVERLOS FACILMENTE SI LO DESEAN -->
     <div>
 
-        <div class="toggle-container">
-            <input type="checkbox" id="toggle-theme">
-            <label for="toggle-theme"></label>
+      <!-- Cambiar el tema a black o en white el body -->
+      <div class="container">
+        <div class="theme-toggle-container">
+          <h3>Temas</h3>
+          <div class="theme-buttons">
+            <button id="theme-light" class="theme-button active" data-theme="light">
+              <img id="light-image" src="https://cdn-icons-png.flaticon.com/512/54/54241.png" width="20px" height="20px" class="theme-icon">
+            </button>
+            <button id="theme-dark" class="theme-button" data-theme="dark">
+              <img id="dark-image" src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f319.png" width="20px" height="20px" class="theme-icon">
+            </button>
           </div>
-          
+        </div>
+      </div>
+      
+      
+      
 
+          <!-- Darle efectos al hover o no -->
           <div class="quitar-efectos">
             <button id="color-button" class="color-on">Colores: Activos</button>
           </div>
           
+          <!-- Imagen del numero 5  -->
           <div class="num5">
             <img src="https://cdn5.dibujos.net/dibujos/pintar/numero-5.png" alt="">
           </div>
 
+          <!-- Imagen de cecytem -->
           <div class="cecy">
             <img src="https://emanuel43.files.wordpress.com/2016/10/cecytem.gif" alt="">
             <h1>Equipo </h1>
-          </div>
+          </div> 
 
 
+          <!-- Nombre de los integrantes y del jefe del equipo -->
         <div class="equipo">
         <div class="integrantes">
             <h1>Jefe del equipo: </h1>
@@ -42,23 +59,36 @@
         </div>
         </div>
 
+        <!-- Datoas para que se contacten con nosotros y derechos de autor -->
 
-        <footer class="footer" id="toggle-theme" >
-            <div class="derechos">
-              <div class="copyright">
-                <label>Copyright © 2023 Equipo 5. Todos los derechos reservados.</label>
-
-                <div class="dropdown">
-                    <input type="button" class="dropbtn" value="contáctanos">
-                  <div class="dropdown-content">
-                    <a href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge Daniel Grande Quintana</a>
-                    <a href="mailto:support@example.com">Milton Daniel Contreras Coeto</a>
-                    <a href="mailto:sales@example.com">Cesar Enrique Tapia Lopez</a>
-                    <a href="mailto:sales@example.com">Melisa Aranza Garcia Hidalgo</a>
-                  </div>
+        <footer class="footer" id="toggle-theme">
+          <div class="derechos">
+            <div class="copyright">
+              <label>Copyright © 2023 Equipo 5. Todos los derechos reservados.
+              </label>
+        
+              <div class="dropdown">
+                <input type="button" class="dropbtn" value="contáctanos">
+                <div class="dropdown-content">
+                  <a href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge Daniel Grande Quintana</a>
+                  <a href="mailto:support@example.com">Milton Daniel Contreras Coeto</a>
+                  <a href="mailto:sales@example.com">Cesar Enrique Tapia Lopez</a>
+                  <a href="mailto:sales@example.com">Melisa Aranza Garcia Hidalgo</a>
                 </div>
               </div>
+        
+              <div class="agradecimiento">
+              <h1>¡Bienvenidos a nuestra página! Somos un grupo de cuatro personas dedicadas a la creación de un proyecto para nuestras materias.
+                 Durante todo un mes hemos trabajado arduamente para diseñar y desarrollar esta página,
+                  con el objetivo de brindar información útil y clara sobre nuestras materias. <br>
+
+                  Esperamos que encuentren esta página informativa y fácil de navegar.
+                   Si tienen alguna pregunta o comentario, no duden en contactarnos a través de nuestro correo electrónico.<br>
+                   ¡Gracias por visitarnos y por apoyar nuestro proyecto! </h1>
+              </div>
+        
             </div>
+          </div>
         </footer>
           
 
@@ -66,6 +96,9 @@
 
 
 <!-- CADA MATERIA VAN A ESTAR ORDENADOS CON ESTE FORM PARA QUE CADA MATERIA TENGA UN STYLE DISTINTO  -->
+
+
+
         <form  class="ecologia" id="ecologia">
 
 
@@ -98,6 +131,24 @@
 
             <a href="../web/ingles.html"><input  class="btn3 centrar" id="ingles-button" type="button" value="Ingresar a la materia"></a>
 
+            <div class="slider">
+              <div class="slide-track">
+            <!--     <div class="slide"> <a href="web/ingles.html"><img src="img/PrimerParcial.png" alt=""></a> </div> -->
+                <div class="slide"> <a href="web/ingles2.html"><img src="img/2doparcial.jpg" alt=""></a> </div>
+                <div class="slide"> <a href="web/ingles3.html"><img src="img/3 parcial.PNG" alt=""></a> </div>
+                <div class="slide"> <a href="web/ingles2.html"><img src="img/2doparcial.jpg" alt=""></a> </div>
+                <div class="slide"> <a href="web/ingles3.html"><img src="img/3 parcial.PNG" alt=""></a> </div>
+                <div class="slide"> <a href="web/ingles2.html"><img src="img/2doparcial.jpg" alt=""></a> </div>
+
+            
+            <!--     <div class="slide"> <a href="web/ingles.html"><img src="img/PrimerParcial.png" alt=""></a> </div> -->
+                <div class="slide"> <a href="web/ingles3.html"><img src="img/3 parcial.PNG" alt=""></a> </div>
+                <div class="slide"> <a href="web/ingles2.html"><img src="img/2doparcial.jpg" alt=""></a> </div>
+                <div class="slide"> <a href="web/ingles3.html"><img src="img/3 parcial.PNG" alt=""></a> </div>
+
+              </div>
+            </div>
+
         </form>
 
 
@@ -115,6 +166,7 @@
     </div>
 
 <script src="/Code/code.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
