@@ -1017,7 +1017,7 @@ body {
 /*  */
 
 
-@media (min-width: 399px) and (max-width: 705px) {
+@media screen and (min-width: 360px) and (max-width: 720px){
   /*     body {
         text-align: center;
         background-image: url("https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/images/CUAUTITL%C3%81N.jpg");
@@ -1437,7 +1437,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: -350px;
+    margin-top: -380px;
     margin-left: -290px;
   }
 
