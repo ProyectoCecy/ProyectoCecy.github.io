@@ -6,65 +6,66 @@ document.getElementById('fisica').addEventListener('click', fisica);
 
 
 
-function calculo(event){
-    event.preventDefault();
 
-    swal({
-        title: "Aviso!",
-        text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
-        icon: "info",
-        buttons: true,
-        dangerMode: true
-      });
-      
+function calculo(event) {
+  event.preventDefault();
+
+  swal({
+    title: "Aviso!",
+    text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
+    icon: "info",
+    buttons: true,
+    dangerMode: true
+  });
 
 
-/*     swal({
-        title: "Los datos se han guardado correctamente!",
-        text: "Ya puedes iniciar sesion con los datos ingresados para el registro",
-        icon:"success",
-        buttons:{
-          cancel:{
-            text:"regresar para corregir datos",
-            value: false,
-            visible: true,
-            className: "",
-            closeModal: true
-          },
-            confirm:{
-            text:"Continuar",
-            value: true,
-            visible: true,
-            className: "",
-            classModal: true
+
+  /*     swal({
+          title: "Los datos se han guardado correctamente!",
+          text: "Ya puedes iniciar sesion con los datos ingresados para el registro",
+          icon:"success",
+          buttons:{
+            cancel:{
+              text:"regresar para corregir datos",
+              value: false,
+              visible: true,
+              className: "",
+              closeModal: true
+            },
+              confirm:{
+              text:"Continuar",
+              value: true,
+              visible: true,
+              className: "",
+              classModal: true
+            }
           }
-        }
-      }).then(function(value){
-        if(value){
-          location.reload()
-        }else{
-          swal({
-            title: "NO SE A MODIFICADO NADA",
-            text: "Los datos no se han guardado, puedes modificar algun dato si es que a si lo deceas",
-            icon: "warning",
-            button: "Ok"
-          })
-        }
-      }) */
+        }).then(function(value){
+          if(value){
+            location.reload()
+          }else{
+            swal({
+              title: "NO SE A MODIFICADO NADA",
+              text: "Los datos no se han guardado, puedes modificar algun dato si es que a si lo deceas",
+              icon: "warning",
+              button: "Ok"
+            })
+          }
+        }) */
 }
 
 
-function fisica(event){
-    event.preventDefault()
+function fisica(event) {
+  event.preventDefault()
 
-    swal({
-        title: "Aviso!",
-        text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
-        icon: "info",
-        buttons: true,
-        dangerMode: true
-      });
-      
+  swal({
+    title: "Aviso!",
+    text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
+    icon: "info",
+    buttons: true,
+    dangerMode: true
+  });
+
 }
 
 /* La funcion de este codigo hace que se cambie de color el body junto con las cosas que tengan la clase de .dark-mode 
@@ -124,7 +125,7 @@ const darkImage = document.getElementById("dark-image");
 /* Cosas cuando esta activado el tema light */
 
 // Escuchadores de eventos para los botones de tema
-themeLightButton.addEventListener("click", function() {
+themeLightButton.addEventListener("click", function () {
   // Establecer el tema de luz
   document.documentElement.setAttribute("data-theme", "light");
   // Guardar la elección del usuario en localStorage
@@ -139,7 +140,7 @@ themeLightButton.addEventListener("click", function() {
 
 /* Cosas cuando este activado el tema de dark */
 
-themeDarkButton.addEventListener("click", function() {
+themeDarkButton.addEventListener("click", function () {
   // Establecer el tema oscuro
   document.documentElement.setAttribute("data-theme", "dark");
   // Guardar la elección del usuario en localStorage
@@ -181,10 +182,10 @@ if (currentTheme) {
 
 // Escuchador de eventos para cada botón de tema
 const toggleButtons = document.querySelectorAll(".theme-button");
-toggleButtons.forEach(function(button) {
-  button.addEventListener("click", function() {
+toggleButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
     // Desactivar todos los botones de tema y luego activar el seleccionado
-    toggleButtons.forEach(function(btn) {
+    toggleButtons.forEach(function (btn) {
       btn.classList.remove("active");
     });
     this.classList.add("active");
@@ -217,7 +218,7 @@ const ingles = document.getElementById("ingles");
 const fisica1 = document.getElementById("fisica1");
 
 
-colorButton.addEventListener("click", function() {
+colorButton.addEventListener("click", function () {
   document.body.classList.toggle("color-off");
   document.body.classList.toggle("colors");
 
@@ -229,102 +230,115 @@ colorButton.addEventListener("click", function() {
 
     // Agregar regla de CSS para hover en "ecologia" cuando el botón esté en modo "off"
 
-    ecologia.addEventListener("mouseover", function() {
+    ecologia.addEventListener("mouseover", function () {
       this.style.background = "rgba(128, 128, 128, 0.689)";
       this.style.color = "#000000";
     });
-    ecologia.addEventListener("mouseout", function() {
+    ecologia.addEventListener("mouseout", function () {
       this.style.background = "";
     });
 
     /* Cambiar en calculo */
-    
-    calculo1.addEventListener("mouseover", function() {
+
+    calculo1.addEventListener("mouseover", function () {
       this.style.background = "rgba(128, 128, 128, 0.689)";
       this.style.color = "#000000";
     });
-    calculo1.addEventListener("mouseout", function() {
+    calculo1.addEventListener("mouseout", function () {
       this.style.background = "";
     });
 
-    
+
     /* Cambiar en ingles */
 
-    ingles.addEventListener("mouseover", function() {
-        this.style.background = "rgba(128, 128, 128, 0.689)";
-        this.style.color = "#000000";
-      });
-    ingles.addEventListener("mouseout", function() {
-        this.style.background = "";
-      });
+    ingles.addEventListener("mouseover", function () {
+      this.style.background = "rgba(128, 128, 128, 0.689)";
+      this.style.color = "#000000";
+    });
+    ingles.addEventListener("mouseout", function () {
+      this.style.background = "";
+    });
 
 
-      /* Cambiar en fisica */
+    /* Cambiar en fisica */
 
 
-    fisica1.addEventListener("mouseover", function() {
-        this.style.background = "rgba(128, 128, 128, 0.689)";
-        this.style.color = "#000000";
-      });
-    fisica1.addEventListener("mouseout", function() {
-        this.style.background = "";
-      });
+    fisica1.addEventListener("mouseover", function () {
+      this.style.background = "rgba(128, 128, 128, 0.689)";
+      this.style.color = "#000000";
+    });
+    fisica1.addEventListener("mouseout", function () {
+      this.style.background = "";
+    });
 
 
   } else {
     colorButton.textContent = "Colores: Activos";
     colorButton.style.background = "linear-gradient(250deg, #33cc33, rgba(0, 208, 255, 0.712), #ffcc00, #cc33ff, #ff3366)";
     colorButton.style.color = "#fff";
-    
+
 
     // Agregar regla de CSS para hover en "ecologia" cuando el botón esté en modo "on"
 
-    ecologia.addEventListener("mouseover", function() {
+    ecologia.addEventListener("mouseover", function () {
       this.style.background = "linear-gradient(250deg, #33cc33, rgba(0, 208, 255, 0.712) )";
       this.style.color = "#000000";
     });
-    ecologia.addEventListener("mouseout", function() {
+    ecologia.addEventListener("mouseout", function () {
       this.style.background = "";
       this.style.color = "";
     });
 
     /* cambiar el color del hover en calculo */
 
-    calculo1.addEventListener("mouseover", function() {
+    calculo1.addEventListener("mouseover", function () {
       this.style.background = "linear-gradient(250deg, red, blue)";
       this.style.color = "#000000";
     });
-    calculo1.addEventListener("mouseout", function() {
+    calculo1.addEventListener("mouseout", function () {
       this.style.background = "";
       this.style.color = "";
     });
 
     /* Cambiar el color del hober en ingles */
 
-    ingles.addEventListener("mouseover", function() {
-        this.style.background = "linear-gradient(360deg, white, red, white, red, white, red, white, red, white, blue, white, blue, white)";
-        this.style.color = "#000000";
-      });
-    ingles.addEventListener("mouseout", function() {
-        this.style.background = "";
-        this.style.color = "";
-      });
+    ingles.addEventListener("mouseover", function () {
+      this.style.background = "linear-gradient(360deg, white, red, white, red, white, red, white, red, white, blue, white, blue, white)";
+      this.style.color = "#000000";
+    });
+    ingles.addEventListener("mouseout", function () {
+      this.style.background = "";
+      this.style.color = "";
+    });
 
 
-      /* Cambiar colores en el hover en fisica */
+    /* Cambiar colores en el hover en fisica */
 
-    fisica1.addEventListener("mouseover", function() {
-        this.style.background = "linear-gradient(300deg, red, green, blue, orangered, red, green, blue, orange)";
-        this.style.color = "#000000";
-      });
-    fisica1.addEventListener("mouseout", function() {
-        this.style.background = "";
-        this.style.color = "";
-      });
+    fisica1.addEventListener("mouseover", function () {
+      this.style.background = "linear-gradient(300deg, red, green, blue, orangered, red, green, blue, orange)";
+      this.style.color = "#000000";
+    });
+    fisica1.addEventListener("mouseout", function () {
+      this.style.background = "";
+      this.style.color = "";
+    });
 
   }
 });
 
 
 
+
+
+
+
+const spamEcologia = document.querySelector('.spam-ecologia');
+
+ecologia.addEventListener('mouseover', () => {
+  spamEcologia.classList.add('mostrar'); /* Agregamos la clase "mostrar" al hacer hover */
+});
+
+ecologia.addEventListener('mouseout', () => {
+  spamEcologia.classList.remove('mostrar'); /* Removemos la clase "mostrar" al salir del hover */
+});
 
