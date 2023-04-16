@@ -222,6 +222,12 @@ body {
   height: 100%;
 }
 
+/* Con este br se hace un salto de linea donde se vera dos correos electronicos separados y tendran estas medidas */
+.br-contactos{
+  margin-top: -69px;
+  margin-left: 462px;
+}
+
 
 .agradecimiento {
   display: none;
@@ -643,7 +649,7 @@ body {
       red, green, blue, orange);
 }
 
-:not(.color-off) .btn4 {
+.btn5 {
   background: linear-gradient(300deg, rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 68, 0, 0.638),
       rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 166, 0, 0.638));
   font-size: 18px;
@@ -1001,6 +1007,12 @@ body {
       rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 
+  /* Con este br hago que se separe los contactos con el los otros dos contactos, para darle estas posiciones en telefono */
+  .br-contactos{
+    margin-top: -1px;
+    margin-left: 10px;
+  }
+
 }
 
 
@@ -1017,7 +1029,571 @@ body {
 /*  */
 
 
-@media screen and (min-width: 360px) and (max-width: 720px){
+@media screen and (min-width: 360px) and (max-width: 720px) {
+  /*     body {
+        text-align: center;
+        background-image: url("https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/images/CUAUTITL%C3%81N.jpg");
+        background-size: 700px 703px; */
+  /*  background-position: -50px 0px;
+        background-repeat: no-repeat; */
+  /* } 
+     background-position: center;
+        margin-top: 45%;
+    */
+
+  .salir {
+    border-radius: 25px;
+    height: 25px;
+    width: 28%;
+    margin-top: 25px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+  }
+
+  .salir:hover {
+    background: rgba(255, 0, 0, 0.582);
+  }
+
+  .name {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .centrar {
+    margin-top: 40%;
+  }
+
+  .ecologia {
+
+    width: 190px;
+    height: 250px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-103%, 15%);
+    border-radius: 25px;
+  }
+
+  .ecologia img {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+  }
+
+  .ecologia:hover {
+    background: linear-gradient(250deg, #33cc33, rgba(0, 208, 255, 0.712));
+    /*  background-color: #33cc33; */
+    color: #fff;
+  }
+
+  .btn {
+
+    background: linear-gradient(250deg, rgba(0, 208, 255, 0.712), #33cc33);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 145px;
+    height: 30px;
+    font-family: fantasy;
+    color: blue;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+
+  .spam-ecologia {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0%;
+    margin-top: -26%;
+    z-index: 999;
+    text-align: center;
+    /* Reduce el tiempo cuando se quita el hover */
+    transition: all 100ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spam-ecologia img {
+    border-radius: 15%;
+    width: 310px;
+    height: 249.90px;
+  }
+
+  .spam-ecologia h1 {
+    font-size: 14px;
+    position: fixed;
+    margin-top: -47%;
+    margin-left: 9%;
+    color: rgb(8, 143, 1);
+  }
+
+  .ecologia:hover+.spam-ecologia {
+    /* Es el tiempo que se toma para que aparezca */
+    transition: all 600ms ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  /* Calculo */
+
+
+  .calculo {
+    width: 190px;
+    height: 250px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-103%, -92%);
+    border-radius: 25px;
+
+  }
+
+  .calculo:hover {
+    background: linear-gradient(250deg, red, blue);
+  }
+
+  .calculo img {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+  }
+
+  .btn2 {
+    background: linear-gradient(250deg, red, blue);
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 145px;
+    height: 30px;
+    font-family: fantasy;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+
+  .spam-calculo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0%;
+    margin-top: 42%;
+    z-index: 999;
+    text-align: center;
+    /* Reduce el tiempo cuando se quita el hover */
+    transition: all 100ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spam-calculo img {
+    border-radius: 15%;
+    width: 310px;
+    height: 249.90px;
+  }
+
+  .spam-calculo h1 {
+    font-size: 14px;
+    position: fixed;
+    margin-top: -47%;
+    margin-left: 9%;
+    color: rgb(0, 106, 255);
+  }
+
+  .calculo:hover+.spam-calculo {
+    transition: all 600ms ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Ingles */
+
+  .ingles {
+
+    width: 190px;
+    height: 250px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 15%);
+    border-radius: 25px;
+
+  }
+
+  .ingles:hover {
+    background: linear-gradient(360deg, white, red, white,
+        red, white,
+        red, white,
+        red, white,
+        blue, white, blue, white);
+  }
+
+  .ingles img {
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+  }
+
+  .slider .slide img {
+    width: 120px;
+    height: 35px;
+    padding: 5px;
+    background-color: rgb(69, 69, 69);
+    cursor: pointer;
+    margin: 48px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+
+  .btn3 {
+    width: 145px;
+    height: 30px;
+    border-radius: 25px;
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
+        blue, white, blue, white);
+    font-size: 18px;
+    color: rgb(0, 38, 255);
+    font-family: fantasy;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+
+  }
+
+
+  .spam-ingles {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0%;
+    margin-top: -26%;
+    z-index: 999;
+    text-align: center;
+    /* Reduce el tiempo cuando se quita el hover */
+    transition: all 100ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spam-ingles img {
+    border-radius: 15%;
+    width: 310px;
+    height: 249.90px;
+  }
+
+  .spam-ingles h1 {
+    font-size: 14px;
+    position: fixed;
+    margin-top: -47%;
+    margin-left: 19%;
+    color: rgba(86, 110, 122, 255);
+  }
+
+  .ingles:hover+.spam-ingles {
+    transition: all 600ms ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  /* fisica */
+
+  .fisica {
+
+    width: 190px;
+    height: 250px;
+    background: rgba(128, 128, 128, 0.689);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -92%);
+    border-radius: 25px;
+
+  }
+
+  .fisica img {
+
+    width: 90px;
+    height: 90px;
+    margin-top: 15px;
+  }
+
+  .fisica:hover {
+    background: linear-gradient(300deg, red, green, blue, orangered,
+        red, green, blue, orange);
+  }
+
+  .btn5 {
+    background: linear-gradient(300deg, rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 68, 0, 0.638),
+        rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 166, 0, 0.638));
+    font-size: 12px;
+    width: 145px;
+    height: 30px;
+    border-radius: 25px;
+    font-family: fantasy;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  .spam-fisica {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 0%;
+    margin-top: 42%;
+    z-index: 999;
+    text-align: center;
+    /* Reduce el tiempo cuando se quita el hover */
+    transition: all 100ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spam-fisica img {
+    border-radius: 15%;
+    width: 310px;
+    height: 249.90px;
+  }
+
+  .spam-fisica h1 {
+    font-size: 14px;
+    position: fixed;
+    margin-top: -47%;
+    margin-left: 9%;
+    color: rgba(29, 31, 34, 255);
+  }
+
+  .fisica:hover+.spam-fisica {
+    transition: all 600ms ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
+
+  /* Button para quitar los colores al hover de las materias */
+
+  #color-button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 140px;
+    margin-top: -295px;
+  }
+
+  .equipo {
+    /* Se oculta ya que en el hover de las materias se muestra los nombres de integrantes */
+
+    /*     width: 420px;
+    height: 100px;
+    justify-content: center;
+    background: rgb(94, 92, 92);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, 100%);
+    text-align: center;
+    border-radius: 25px; */
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -320px;
+    margin-left: -270px;
+  }
+
+  .cecy img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -190px;
+    margin-left: -120px;
+  }
+
+  .cecy h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -310px;
+    margin-left: -70px;
+    font-size: 30px;
+  }
+
+  .num5 img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 60px;
+    margin-top: -300px;
+  }
+
+  /* Pie de pagina */
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(66, 66, 77);
+    color: white;
+    text-align: center;
+    z-index: 999;
+    /* Establece un índice z alto */
+    transition: height .5s ease-in-out;
+    /* Agrega una transición de altura con una duración de 0.5 segundos y un efecto ease-in-out */
+  }
+
+  .footer:hover {
+    height: 475px;
+    /* Establece la altura mayor */
+  }
+
+  .footer:hover .derechos {
+    height: 100%;
+    /* Establece la altura del elemento "derechos" al 100% */
+  }
+
+  .derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  .agradecimiento {
+    display: none;
+    margin-top: 88px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .agradecimiento h1 {
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+
+
+  .copyright label {
+    font-size: 10.3px;
+    margin-top: -15px;
+    margin-left: -15px;
+    /* Determina la posicion del txt copyright junto con los botones  */
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    min-width: 160px;
+    white-space: nowrap;
+    top: 50px;
+    /* determina la distancia en horizontal los correos */
+    right: 0;
+    left: -295px;
+    /* Se agrega el apartado de la distancia los correos con el contactanos */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: inherit;
+    color: rgb(81, 255, 0);
+    padding: 0;
+    border: none;
+    height: 61px;
+    cursor: pointer;
+    font-size: 13px; /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 18px 12px;
+    /* Determina el tamano del button del los correos */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
+  }
+
+
+}
+
+
+
+
+
+/* Dispositivos mas chicos */
+
+@media screen and (min-width: 399px) and (max-width: 694px) {
+
+
   /*     body {
         text-align: center;
         background-image: url("https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/images/CUAUTITL%C3%81N.jpg");
@@ -1105,7 +1681,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: -20%;
+    margin-top: -25%;
     z-index: 999;
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
@@ -1117,14 +1693,14 @@ body {
   .spam-ecologia img {
     border-radius: 15%;
     width: 310px;
-    height: 258px;
+    height: 252px;
   }
 
   .spam-ecologia h1 {
     font-size: 14px;
     position: fixed;
     margin-top: -47%;
-    margin-left: 19%;
+    margin-left: 12%;
     color: rgb(8, 143, 1);
   }
 
@@ -1147,7 +1723,7 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-108%, -83%);
+    transform: translate(-108%, -95%);
     border-radius: 25px;
 
   }
@@ -1185,7 +1761,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: 30%;
+    margin-top: 43.5%;
     z-index: 999;
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
@@ -1197,14 +1773,14 @@ body {
   .spam-calculo img {
     border-radius: 15%;
     width: 310px;
-    height: 258px;
+    height: 252px;
   }
 
   .spam-calculo h1 {
     font-size: 14px;
     position: fixed;
     margin-top: -47%;
-    margin-left: 19%;
+    margin-left: 12%;
     color: rgb(0, 106, 255);
   }
 
@@ -1265,11 +1841,10 @@ body {
         rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
         rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
         blue, white, blue, white);
-    font-size: 18px;
-    color: rgb(0, 38, 255);
+    font-size: 14px;
+    color: rgb(248, 5, 5);
     font-family: fantasy;
     cursor: pointer;
-    font-size: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1284,7 +1859,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: -20%;
+    margin-top: -25%;
     z-index: 999;
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
@@ -1296,14 +1871,14 @@ body {
   .spam-ingles img {
     border-radius: 15%;
     width: 310px;
-    height: 258px;
+    height: 252px;
   }
 
   .spam-ingles h1 {
     font-size: 14px;
     position: fixed;
     margin-top: -47%;
-    margin-left: 19%;
+    margin-left: 12%;
     color: rgba(86, 110, 122, 255);
   }
 
@@ -1325,7 +1900,7 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(5%, -83%);
+    transform: translate(5%, -95%);
     border-radius: 25px;
 
   }
@@ -1342,21 +1917,20 @@ body {
         red, green, blue, orange);
   }
 
-  .btn4 {
+  .btn5 {
     background: linear-gradient(300deg, rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 68, 0, 0.638),
         rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 166, 0, 0.638));
-    font-size: 18px;
+    font-size: 12px;
     width: 145px;
     height: 30px;
     border-radius: 25px;
     font-family: fantasy;
     cursor: pointer;
     color: white;
-    font-size: 18px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -50%);
   }
 
 
@@ -1366,7 +1940,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: 30%;
+    margin-top: 43.5%;
     z-index: 999;
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
@@ -1378,14 +1952,14 @@ body {
   .spam-fisica img {
     border-radius: 15%;
     width: 310px;
-    height: 258px;
+    height: 252px;
   }
 
   .spam-fisica h1 {
     font-size: 14px;
     position: fixed;
     margin-top: -47%;
-    margin-left: 19%;
+    margin-left: 12%;
     color: rgba(29, 31, 34, 255);
   }
 
@@ -1412,23 +1986,23 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-left: 160px;
-    margin-top: -280px;
+    margin-left: 150px;
+    margin-top: -360px;
   }
 
   .equipo {
     /* Se oculta ya que en el hover de las materias se muestra los nombres de integrantes */
 
     /*     width: 420px;
-    height: 100px;
-    justify-content: center;
-    background: rgb(94, 92, 92);
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    transform: translate(-50%, 100%);
-    text-align: center;
-    border-radius: 25px; */
+      height: 100px;
+      justify-content: center;
+      background: rgb(94, 92, 92);
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, 100%);
+      text-align: center;
+      border-radius: 25px; */
     display: none;
   }
 
@@ -1437,7 +2011,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: -320px;
+    margin-top: -380px;
     margin-left: -290px;
   }
 
@@ -1447,7 +2021,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -70px;
+    margin-top: -170px;
     margin-left: -120px;
   }
 
@@ -1455,7 +2029,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -300px;
+    margin-top: -370px;
     margin-left: -80px;
     font-size: 30px;
   }
@@ -1468,8 +2042,104 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 60px;
-    margin-top: -300px;
+    margin-top: -360px;
   }
 
 
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(66, 66, 77);
+    color: white;
+    text-align: center;
+    z-index: 999;
+    /* Establece un índice z alto */
+    transition: height .5s ease-in-out;
+    /* Agrega una transición de altura con una duración de 0.5 segundos y un efecto ease-in-out */
+  }
+
+  .footer:hover {
+    height: 405px;
+    /* Establece la altura mayor */
+  }
+
+  .footer:hover .derechos {
+    height: 100%;
+    /* Establece la altura del elemento "derechos" al 100% */
+  }
+
+  .derechos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  .agradecimiento {
+    display: none;
+    margin-top: 88px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .agradecimiento h1 {
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+
+
+  .copyright label {
+    font-size: 12px;
+    margin-left: 0px;
+    /* Determina la posicion del txt copyright junto con los botones  */
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    min-width: 160px;
+    white-space: nowrap;
+    top: 50px;
+    /* determina la distancia en horizontal los correos */
+    right: 0;
+    left: -345px;
+    /* Se agrega el apartado de la distancia los correos con el contactanos */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+
+  .dropbtn {
+    background-color: inherit;
+    color: rgb(81, 255, 0);
+    padding: 0;
+    border: none;
+    height: 61px;
+    cursor: pointer;
+    font-size: 16px; /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 18px 12px;
+    /* Determina el tamano del button del los correos */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px; /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
+  }
 }
