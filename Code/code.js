@@ -332,13 +332,30 @@ colorButton.addEventListener("click", function () {
 
 
 
-const spamEcologia = document.querySelector('.spam-ecologia');
+/* const spamEcologia = document.querySelector('.spam-ecologia');
 
 ecologia.addEventListener('mouseover', () => {
-  spamEcologia.classList.add('mostrar'); /* Agregamos la clase "mostrar" al hacer hover */
+  spamEcologia.classList.add('mostrar'); /* Agregamos la clase "mostrar" al hacer hover 
 });
 
 ecologia.addEventListener('mouseout', () => {
-  spamEcologia.classList.remove('mostrar'); /* Removemos la clase "mostrar" al salir del hover */
+  spamEcologia.classList.remove('mostrar'); /* Removemos la clase "mostrar" al salir del hover 
+}); */
+
+
+
+window.addEventListener('load', function() {
+  if (window.innerWidth >= 360 && window.innerWidth <= 720) {
+
+    swal({
+      title: "Aviso",
+      text: "Esta página tiene activado el scroll vertical. Puedes desplazarte por la página cuando lo necesites.",
+      icon: "info",
+      timer: 6500,
+      buttons: false,
+      dangerMode: true,
+    });
+    
+  }
 });
 
