@@ -3,7 +3,6 @@
   margin: 0;
 }
 
-
 /* DESDE AQUI EMPIEZA DONDE LE DARE LOS EFECTOS DE DARK O NIGHT AL BODY Y OTRAS COSAS  */
 
 body {
@@ -223,7 +222,7 @@ body {
 }
 
 /* Con este br se hace un salto de linea donde se vera dos correos electronicos separados y tendran estas medidas */
-.br-contactos{
+.br-contactos {
   margin-top: -69px;
   margin-left: 462px;
 }
@@ -1008,7 +1007,7 @@ body {
   }
 
   /* Con este br hago que se separe los contactos con el los otros dos contactos, para darle estas posiciones en telefono */
-  .br-contactos{
+  .br-contactos {
     margin-top: -1px;
     margin-left: 10px;
   }
@@ -1040,6 +1039,11 @@ body {
      background-position: center;
         margin-top: 45%;
     */
+
+  body {
+    height: 170vh;
+  }
+
 
   .salir {
     border-radius: 25px;
@@ -1076,7 +1080,7 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-103%, 15%);
+    transform: translate(-102.3%, 15%);
     border-radius: 25px;
   }
 
@@ -1117,25 +1121,27 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: -26%;
-    z-index: 999;
+    margin-top: 190px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-ecologia img {
     border-radius: 15%;
-    width: 310px;
+    width: 270px;
     height: 249.90px;
   }
 
   .spam-ecologia h1 {
     font-size: 14px;
     position: fixed;
-    margin-top: -47%;
+    margin-top: -52%;
     margin-left: 9%;
     color: rgb(8, 143, 1);
   }
@@ -1159,7 +1165,7 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-103%, -92%);
+    transform: translate(-102.3%, -92%);
     border-radius: 25px;
 
   }
@@ -1197,25 +1203,27 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: 42%;
-    z-index: 999;
+    margin-top: 190px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-calculo img {
     border-radius: 15%;
-    width: 310px;
+    width: 270px;
     height: 249.90px;
   }
 
   .spam-calculo h1 {
     font-size: 14px;
     position: fixed;
-    margin-top: -47%;
+    margin-top: -52%;
     margin-left: 9%;
     color: rgb(0, 106, 255);
   }
@@ -1237,7 +1245,7 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(0%, 15%);
+    transform: translate(2%, 15%);
     border-radius: 25px;
 
   }
@@ -1296,26 +1304,28 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: -26%;
-    z-index: 999;
+    margin-top: 190px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-ingles img {
     border-radius: 15%;
-    width: 310px;
+    width: 270px;
     height: 249.90px;
   }
 
   .spam-ingles h1 {
     font-size: 14px;
     position: fixed;
-    margin-top: -47%;
-    margin-left: 19%;
+    margin-top: -51%;
+    margin-left: 9%;
     color: rgba(86, 110, 122, 255);
   }
 
@@ -1337,7 +1347,7 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(0%, -92%);
+    transform: translate(2%, -92%);
     border-radius: 25px;
 
   }
@@ -1377,13 +1387,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: 42%;
-    z-index: 999;
+    margin-top: 190px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-fisica img {
@@ -1453,13 +1465,14 @@ body {
   }
 
   .cecy img {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -190px;
+    margin-top: 307.2px;
     margin-left: -120px;
+    z-index: -999;
   }
 
   .cecy h1 {
@@ -1483,7 +1496,7 @@ body {
   }
 
   /* Pie de pagina */
-  
+
   .footer {
     position: fixed;
     bottom: 0;
@@ -1570,7 +1583,8 @@ body {
     border: none;
     height: 61px;
     cursor: pointer;
-    font-size: 13px; /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
+    font-size: 13px;
+    /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
   }
 
   .dropdown-content a {
@@ -1579,7 +1593,8 @@ body {
     /* Determina el tamano del button del los correos */
     text-decoration: none;
     display: inline-block;
-    font-size: 12px; /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
+    font-size: 12px;
+    /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
   }
 
 
@@ -1604,6 +1619,10 @@ body {
      background-position: center;
         margin-top: 45%;
     */
+
+  body {
+    height: 170vh;
+  }
 
   .salir {
     border-radius: 25px;
@@ -1681,13 +1700,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: -25%;
-    z-index: 999;
+    margin-top: 209px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-ecologia img {
@@ -1761,13 +1782,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: 43.5%;
-    z-index: 999;
+    margin-top: 209px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-calculo img {
@@ -1859,13 +1882,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: -25%;
-    z-index: 999;
+    margin-top: 209px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-ingles img {
@@ -1940,13 +1965,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
-    margin-top: 43.5%;
-    z-index: 999;
+    margin-top: 209px;
+    z-index: -999;
+    /* Hace que se haga transparente en los demas objetos */
     text-align: center;
     /* Reduce el tiempo cuando se quita el hover */
     transition: all 100ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
   }
 
   .spam-fisica img {
@@ -2016,13 +2043,14 @@ body {
   }
 
   .cecy img {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -170px;
+    margin-top: 385px;
     margin-left: -120px;
+    z-index: -999;
   }
 
   .cecy h1 {
@@ -2131,7 +2159,8 @@ body {
     border: none;
     height: 61px;
     cursor: pointer;
-    font-size: 16px; /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
+    font-size: 16px;
+    /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
   }
 
   .dropdown-content a {
@@ -2140,6 +2169,7 @@ body {
     /* Determina el tamano del button del los correos */
     text-decoration: none;
     display: inline-block;
-    font-size: 12px; /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
+    font-size: 12px;
+    /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
   }
 }
