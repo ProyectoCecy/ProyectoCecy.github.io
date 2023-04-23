@@ -5,34 +5,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Proyecto de las materias</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Con la tecla Ctrl+f se abre un buscador donde puedo buscar mas faciles las clases que nombre -->
 
-  <!-- ESTE DIV ES PARA ORDENAR TODAS LAS MATERIAS Y MOVERLOS FACILMENTE SI LO DESEAN -->
-  <div>
+  <section class="section">
+    <h1 class="title">¡Bienvenidos a nuestra página! Somos un grupo de cuatro personas dedicadas a la creación de un
+      proyecto
+      para nuestras materias.
+      Durante todo un mes hemos trabajado arduamente para diseñar y desarrollar esta página,
+      con el objetivo de brindar información útil y clara sobre nuestras materias. <br>
 
-    <!-- Cambiar el tema a black o en white el body -->
-    <div class="container">
-      <div class="theme-toggle-container">
-        <h3>Temas</h3>
-        <div class="theme-buttons">
-          <button id="theme-light" class="theme-button active" data-theme="light">
-            <img id="light-image" src="https://cdn-icons-png.flaticon.com/512/54/54241.png" width="20px" height="20px"
-              class="theme-icon">
-          </button>
-          <button id="theme-dark" class="theme-button" data-theme="dark">
-            <img id="dark-image" src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f319.png"
-              width="20px" height="20px" class="theme-icon">
-          </button>
-        </div>
+      Esperamos que encuentren esta página informativa y fácil de navegar.
+      Si tienen alguna pregunta o comentario, no duden en contactarnos a través de nuestro correo
+      electrónico.<br>
+      ¡Gracias por visitarnos y por apoyar nuestro proyecto! </h1>
+
+
+    <!-- Nombre de los integrantes y del jefe del equipo -->
+    <div class="equipo">
+      <div class="integrantes">
+        <h1>Jefe del equipo: </h1>
+        <h1>• Milton Daniel Contreras Coeto </h1> <br>
+        <h3>Coloboradores del equipo: • Cesar Enrique Tapia Lopez <br>
+          • Melisa Aranza Garcia Hidalgo • Jorge Daniel Grande Quintana <br>
+        </h3>
       </div>
     </div>
 
+  </section>
 
+
+
+
+  <nav class="nav">
 
 
     <!-- Darle efectos al hover o no -->
@@ -52,16 +61,35 @@
     </div>
 
 
-    <!-- Nombre de los integrantes y del jefe del equipo -->
-    <div class="equipo">
-      <div class="integrantes">
-        <h1>Jefe del equipo: </h1>
-        <h1>• Milton Daniel Contreras Coeto </h1> <br>
-        <h3>Coloboradores del equipo: • Cesar Enrique Tapia Lopez <br>
-          • Melisa Aranza Garcia Hidalgo • Jorge Daniel Grande Quintana <br>
-        </h3>
+
+    <!-- Cambiar el tema a black o en white el body -->
+    <div class="container">
+      <div class="theme-toggle-container">
+        <h3>Temas</h3>
+        <div class="theme-buttons">
+          <button id="theme-light" class="theme-button active" data-theme="light">
+            <img id="light-image" src="https://cdn-icons-png.flaticon.com/512/54/54241.png" width="20px" height="20px"
+              class="theme-icon">
+          </button>
+          <button id="theme-dark" class="theme-button" data-theme="dark">
+            <img id="dark-image" src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f319.png"
+              width="20px" height="20px" class="theme-icon">
+          </button>
+        </div>
       </div>
     </div>
+
+  </nav>
+
+
+
+  <!-- Con la tecla Ctrl+f se abre un buscador donde puedo buscar mas faciles las clases que nombre -->
+  <!-- CON EL SHIFT+ALT+F acomoda el codigo de la pagina del htnml, css, js, etc -->
+  <!-- CON CTRL+X HACE QUE SE BORRE LA LINEA COMPLETA Y APARTE SE ACOMODA  -->
+
+  <!-- ESTE DIV ES PARA ORDENAR TODAS LAS MATERIAS Y MOVERLOS FACILMENTE SI LO DESEAN -->
+  <div>
+
 
     <!-- Datoas para que se contacten con nosotros y derechos de autor -->
 
@@ -74,27 +102,16 @@
           <div class="dropdown">
             <input type="button" class="dropbtn" value="contáctanos">
             <div class="dropdown-content">
-              <a href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge Daniel Grande Quintana</a>
-              <a href="mailto:support@example.com">Milton Daniel Contreras Coeto</a> <!-- <br> -->
+              <a href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge Daniel</a>
+              <a href="mailto:support@example.com">Milton Daniel</a> <!-- <br> -->
               <!--  Para que se vea en el dispositivo mobile -->
               <div class="br-contactos">
-                <a href="mailto:sales@example.com">Cesar Enrique Tapia Lopez</a>
-                <a href="mailto:sales@example.com">Melisa Aranza Garcia Hidalgo</a>
+                <a href="mailto:sales@example.com">Cesar Enrique</a>
+                <a href="mailto:sales@example.com">Melisa Aranza</a>
               </div>
             </div>
           </div>
 
-          <div class="agradecimiento">
-            <h1>¡Bienvenidos a nuestra página! Somos un grupo de cuatro personas dedicadas a la creación de un proyecto
-              para nuestras materias.
-              Durante todo un mes hemos trabajado arduamente para diseñar y desarrollar esta página,
-              con el objetivo de brindar información útil y clara sobre nuestras materias. <br>
-
-              Esperamos que encuentren esta página informativa y fácil de navegar.
-              Si tienen alguna pregunta o comentario, no duden en contactarnos a través de nuestro correo
-              electrónico.<br>
-              ¡Gracias por visitarnos y por apoyar nuestro proyecto! </h1>
-          </div>
 
         </div>
       </div>
@@ -227,10 +244,6 @@
   </div>
 
   <script src="/Code/code.js"></script>
-  <!-- LIBRERIA PARA PONER ICONOS DE REDES EN INGLES -->
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <!-- ALERTA CON DISENO INCLUIDO POR SI HAY ERRORES U AVISOS ETC -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 

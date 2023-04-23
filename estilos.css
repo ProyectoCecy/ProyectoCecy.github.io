@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* DESDE AQUI EMPIEZA DONDE LE DARE LOS EFECTOS DE DARK O NIGHT AL BODY Y OTRAS COSAS  */
+body {
+    font-family: Arial;
+    height: 195vh;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+.dark-mode::-webkit-scrollbar-thumb {
+    background: #1F1F1F;
+    border: 3px solid rgb(65, 65, 65);
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    background: #515050;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+}
+
+
+
+
+
+
+
+.section {
+    height: 70vh;
+    background-image: linear-gradient(#3300319a, #0d043db3),
+        url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-lenguaje-de-codificaci%C3%B3n-para-website-frontend-fondo-medios-mixtos-211355717.jpg');
+    height: 655px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.title {
+    text-align: center;
+    line-height: 7vh;
+    font-size: 30px;
+    color: #75fa8b;
+    position: absolute;
+    padding-top: 180px;
+
+}
+
+.title h1 {
+    position: absolute;
+    margin-top: 95px;
+    top: 50%;
+    left: 50%;
+}
+
+
+.nav {
+    /* Al ponerlo trasnsparente hace que el color de fondo se vea y no se tape el color que se escoje */
+    background: transparent;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    /* HACE EL EFECTO DE LA NAVEGACION */
+    position: sticky;
+    /* HACE EL EFECTO DE LA NAVEGACION */
+    top: 0;
+    /* DETERMINA QUE TANTO DE EFECTO HACIA ABAJO HACE, ES ELE EFECTO DEL MAUSE CUADNO BAJO LA PAGINA */
+    margin-top: -150px; 
+}
+
+
+
+
+
+
+
+
+
+/* .dark-mode .nav {
+    background: transparent;
+    transition: all 0.3s ease;
+} */
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+
+/* REFERENCIAS DE CECYTEM JUNTO CON EL NUMERO DEL EQUPO */
+
+.cecy img {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: 250px;
+
+}
+
+.cecy h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: 430px;
+    font-size: 38px;
+}
+
+
+.num5 img {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 250%);
+    margin-left: 640px;
+    margin-top: -400px;
+}
+
+
+
+
+
+
+/* BUTTON DE CAMBIAR EL COLOR A MI GUSTO DEL STYLE DEL HOVER */
+
+#color-button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: -300px;
+    margin-top: 30px;
+}
+
+#color-button.color-off {
+    background-color: #808080;
+    color: #ffffff;
+}
+
+#color-button.color-off:hover {
+    background-color: #555;
+}
+
+
+
+
+/* ESTE ES EL BOTON QUE CAMBIA EL TEMA DE DARK PERO ESTE ES PARA PC */
+.nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    margin-left: -120px;
+}
+
+/* ESTE ES EL BOTON QUE CAMBIA EL TEMA DE DARK PERO ESTE ES PARA EL TELEFONO */
+.container{
+    display: none;
+}
+
+.theme-icon.hide {
+    display: none;
+}
+
+.theme-buttons img {
+    margin-left: 10px;
+}
+
+.theme-toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 -0px 40px rgb(255, 251, 3), 0 3px 6px rgba(250, 226, 6, 0.658)
+}
+
+.theme-toggle-container h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.theme-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    display: block;
+    height: 15px;
+}
+
+.theme-button {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.theme-button.active {
+    transform: scale(1.2);
+}
+
+.theme-button[data-theme="light"] {
+    background-color: white;
+    display: none;
+}
+
+.theme-button[data-theme="dark"] {
+    background-color: black;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    display: block;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .theme-toggle-container {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 0 -0px 40px rgba(99, 0, 239, 0.954), 0 3px 6px rgba(0, 0, 0, 0.2);
+    color: #EAECEE;
+}
+
+/* .theme-button[data-theme="light"] {
+    display: block;
+  }
+  
+  .dark-mode .theme-button[data-theme="dark"] {
+    display: none;
+  } */
+
+
+/* LISTA DE LOS INEGRANTES DE LOS EQUIPOS */
+
+.equipo {
+
+    justify-content: center;
+    background: transparent;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-47%, -310%);
+    text-align: center;
+}
+
+.integrantes {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+
