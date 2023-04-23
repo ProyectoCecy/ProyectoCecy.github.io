@@ -42,8 +42,8 @@ body {
 .section {
     height: 70vh;
     background-image: linear-gradient(#3300319a, #0d043db3),
-        url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-lenguaje-de-codificaci%C3%B3n-para-website-frontend-fondo-medios-mixtos-211355717.jpg');
-    height: 655px;
+url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-lenguaje-de-codificaci%C3%B3n-para-website-frontend-fondo-medios-mixtos-211355717.jpg');
+    height: 686px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
