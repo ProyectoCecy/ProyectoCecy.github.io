@@ -359,3 +359,20 @@ window.addEventListener('load', function() {
   }
 });
 
+
+window.addEventListener('load', function() {
+  if (window.innerWidth >= 1024 && window.innerWidth <= 1920) {
+
+    swal({
+      title: "Aviso",
+      text: "Esta página tiene activado el scroll vertical. Puedes desplazarte por la página cuando lo necesites.",
+      icon: "info",
+      timer: 6500,
+      buttons: false,
+      dangerMode: true,
+    });
+    
+  }
+});
+
+
