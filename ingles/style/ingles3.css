@@ -388,6 +388,9 @@
   visibility: visible;
 }
 /* MOVER LOS 3 PALITOS DEL MENU */
+.bars__menu:hover{
+  cursor: pointer;
+}
 .bars__menu{
   width: 30px;
   height: 30px;

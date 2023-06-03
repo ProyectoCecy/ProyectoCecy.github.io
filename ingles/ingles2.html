@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ingles</title>
+  <link rel="stylesheet" href="./style/ingles2.css">
+
+
+</head>
+
+<body>
+
+  <!--     <audio autoplay id="audio">
+      <source src="music/X2Download.app - musica de espera (320 kbps).mp3" type="audio/mp3">
+      Tu navegador no soporta la etiqueta de audio.
+    </audio> -->
+
+  <div class="header">
+    <div class="container">
+
+      <div class="logo">
+        <a href="#"><img src="https://cdn.pixabay.com/photo/2019/03/27/06/40/united-states-4084364_1280.png" alt=""></a>
+      </div>
+
+      <div class="info">
+        <ul>
+          <li>
+            <a href="/creditos-finales/creditos.html">Credits-End</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="nombre">
+        <h3 id="nombre-texto">creator of this page: Jorge Daniel</h3>
+      </div>
+
+      <div class="title-partial">
+        <h3>Second Partial</h3>
+      </div>
+
+
+      <div class="slider">
+        <div class="slide-track">
+          <!--     <div class="slide"> <a href="./ingles.html"><img src="img/PrimerParcial.png" alt=""></a> </div> -->
+          <div class="slide"> <a href="./ingles.html"><input class="partial1" type="button" value="FIRST Partial"></a>
+          </div>
+          <div class="slide"> <a href="./ingles3.html"><input class="partial2" type="button" value="THIRD Partial">
+          </div>
+          <div class="slide"> <a href="./ingles.html"><input class="partial1" type="button" value="FIRST Partial"></a>
+          </div>
+          <div class="slide"> <a href="./ingles3.html"><input class="partial2" type="button" value="THIRD Partial"></a>
+          </div>
+          <div class="slide"> <a href="./ingles.html"><input class="partial1" type="button" value="FIRST Partial"></a>
+          </div>
+
+
+          <!--     <div class="slide"> <a href="./ingles.html"><img src="img/PrimerParcial.png" alt=""></a> </div> -->
+          <div class="slide"> <a href="./ingles3.html"><input class="partial2" type="button" value="THIRD Partial"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Redes sociales del teacha -->
+
+      <div class="contenedor">
+        <h1 class="redes-title">social media of the teacher</h1>
+        <ul class="ul">
+          <!--   <li class="li"><a class="a github" href="https://github.com/jlmunozfdev"><i class="fab fa-github" aria-hidden="true"></i></a></li> -->
+          <li class="li"><a class="a youtube" href="https://youtube.com/@ElteachaVicente" target="_blank"><i
+                class="fab fa-youtube" aria-hidden="true"></i></a></li>
+          <li class="li"><a class="a facebook" href="https://www.facebook.com/elteacha?mibextid=ZbWKwL"
+              target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+          <li class="li"><a class="a instagram" href="https://instagram.com/vicente_rugamba?igshid=OGRjNzg3M2Y="
+              target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+
+      <!-- AQUI VA EL HOVER PARA VER LOS DEMAS PARCIALES -->
+
+      <!--         <div id="header2">
+          <ul class="nav2">
+
+            <li><a href="">2do partial </a>
+             <ul>
+                <li><a href="">Submenu1</a></li>
+                <li><a href="">Submenu2</a></li>
+                <li><a href="">Submenu3</a></li>
+                <li><a href="">Submenu4</a>
+                  <ul>
+                    <li><a href="">Submenu1</a></li>
+                    <li><a href="">Submenu2</a></li>
+                    <li><a href="">Submenu3</a></li>
+                    <li><a href="">Submenu4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="">Acerca de</a>
+              <ul>
+                <li><a href="">Submenu1</a></li>
+                <li><a href="">Submenu2</a></li>
+                <li><a href="">Submenu3</a></li>
+                <li><a href="">Submenu4</a></li>
+              </ul>
+            </li>
+
+            <li><a href="">Topics of 2do partial</a>
+              <ul>
+                <li><a href="">Submenu1</a></li>
+                <li><a href="">Submenu2</a></li>
+                <li><a href="">Submenu3</a></li>
+                <li><a href="">Submenu4</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </div> -->
+
+
+
+    </div>
+  </div>
+
+  <div class="container">
+    <form class="barra">
+      <!--         <input type="button" onclick="detener()" class="music" id="music" value="Detener la musica. ">
+ -->
+      <ol>
+        <ul>
+          <li class="link">
+            <a href="../index.html">Go Back</a>
+          </li>
+        </ul>
+      </ol>
+
+    </form>
+
+    <div class="sidebar">
+      <div class="barra2">
+        <h2>topics of second partial</h2>
+        <!-- Button que hace que se dezplace el menu, es el button de 3 lineas -->
+        <div class="bars__menu" onclick="toggleTopics()">
+          <span class="line1__bars-menu"></span>
+          <span class="line2__bars-menu"></span>
+          <span class="line3__bars-menu"></span>
+        </div>
+      </div>
+      <ul class="topics-list" id="topicsList">
+        <li>
+          <button class="tema1 topic-button tema2" onclick="showTopicContent('past-perfect-content')">Past
+            Perfect</button>
+        </li>
+        <li>
+          <button class="tema1 topic-button" onclick="showTopicContent('past-perfect-progressive-content')">Past
+            Perfect Progressive</button>
+        </li>
+        <li>
+          <button class="tema1 topic-button" onclick="showTopicContent('present-perfect-content')">Present Perfect</button>
+        </li>
+        <li>
+          <button class="tema1 topic-button" onclick="showTopicContent('present-perfect-progressive-content')">Present Perfect Progressive</button>
+        </li>
+
+      </ul>
+    </div>
+
+
+
+    <!-- primer parcial -->
+
+    <div class="espacio-blanco" id="espacio-blanco">
+
+      <div class="colaboradores2">
+        students which collaborated in the proyect:
+
+        <li>Milton Daniel Contreras Coeto </li>
+        <li>Cesar Enrique Tapia Lopez</li>
+        <li>Melisa Aranza Garcia Hidalgo</li>
+        <li>Jorge Daniel Grande Quintana</li>
+      </div>
+
+
+
+
+      <!-- PAST PERFECT -->
+
+      <div class="topic-content titulo2" id="past-perfect-content">
+        <h3>Past perfect</h3>
+
+
+        <div class="embed4 ejemplo">
+          <h2>AFFIRMATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+          <!-- <p>   Subject + Auxilary + verb in the participle + Complement<br>
+              <b>Ejemplos: </b> 1.- Fernando has drive 5 years. 2.- Antonio has miseed his exgirl</p> -->
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green">Auxilary in Past + </p>
+            <p class="color-blue">Verb in Past Participle + </p>
+            <p class="color-orange">Complement</p> <br> <br>
+            <b>Example in Past: </b> 1.- Ismael had fallen down when the teacher arrived <br> 2.- Cristal had kissed with Mayorga before her boy friend arried
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed5 present-perfect">
+          <h2>NEGATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green">Auxilary in Past + </p>
+            <p class="color-purple">Not + </p>
+            <p class="color-blue">Verb in Past Participle + </p>
+            <p class="color-orange">Complement</p> <br> <br>
+            <b>Example: </b> 1.- Figueroa hadn't said bad works until Jorge <br>
+            2.- Rafael and Ismael hadn't drunk kosako until they me kiraalin
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed6 ejemplo-4">
+          <h2>INTERROGATIVE:</h2> <br>
+          <h4>Structure:</h4> <br>
+          <div>
+
+            <p class="color-green">Auxilary in Past + </p>
+            <p class="color-red">Subject + </p>
+            <p class="color-blue">Verb in Past Participle + </p>
+            <p class="color-orange">Complement + </p>
+            <p class="color-purple">?</p> <br> <br>
+            <b>Example: </b> 1.- OMG, Had Daniela punched kevin? <br>
+            2.- Had Coeto failed english?
+            </p>
+          </div>
+        </div>
+
+        <div class="embed15">
+          <h2>Definition: </h2>
+          <p style="color: yellow; font-size: 18px;">An action that happened before other action in the past</p>
+        </div>
+
+
+
+      </div>
+
+
+      <!-- PAST PERFECT PROGRESSIVE -->
+
+      <div class="topic-content titulo3" id="past-perfect-progressive-content">
+        <h3>Past Perfect Progressive</h3> <br>
+        
+
+
+        <div class="embed7 ejemplo">
+          <h2>AFFIRMATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green" style="color: rgb(255, 255, 255);">Auxilary in Past + </p>
+            <p class="color-blue">Verb to be in past participle + </p>
+            <p class="color-orange">Special Complement</p> <br> <br>
+            <b>Example in Present: </b> 1.- Toady had been chatting with Jorge girlfriend<br>
+            2.- Jonathan had been selling vapes
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed8 progressive">
+          <h2>NEGATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green" style="color: rgb(255, 255, 255);">Auxilary in past + </p>
+            <p class="color-purple">Not + </p>
+            <p class="color-blue">Verb to be in past participle + </p>
+            <p class="color-orange"> Special Complement</p> <br> <br>
+            <b>Example: </b> 1.- Milton hadn't been delivering activites<br>
+            2.- Zaragoza hadn't been sleeping early
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed9 ejemplo-4">
+          <h2>INTERROGATIVE</h2> <br>
+          <h4>Structure:</h4> <br>
+          <div>
+            <p class="color-green" style="color: rgb(255, 255, 255);">Auxilary in Past + </p>
+            <p class="color-red">Subject + </p>
+            <p class="color-blue">Verb to be in past participle + </p>
+            <p class="color-orange">Special Complement + </p>
+            <p class="color-purple">?</p> <br> <br>
+            <b>Example: </b> 1.- Had you been stealing pens? <br>
+            2.- Had teacha Vicente been dating mis Rosy?
+            </p>
+          </div>
+        </div>
+
+        <div style="background: darkblue;" class="embed15">
+          <h2 style="color: rgb(44, 234, 10);">Definition: </h2>
+          <p style="color: white; font-size: 17px;">An action that happened nd finished in the past but the result continues in the present</p>
+        </div>
+
+
+      </div>
+
+
+      <!-- PRESENT PERFECT  -->
+
+      <div class="topic-content titulo2" id="present-perfect-content">
+        <h3>Present perfect</h3>
+
+
+        <div class="embed4 ejemplo">
+          <h2>AFFIRMATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+          <!-- <p>   Subject + Auxilary + verb in the participle + Complement<br>
+              <b>Ejemplos: </b> 1.- Fernando has drive 5 years. 2.- Antonio has miseed his exgirl</p> -->
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green">Auxilary + </p>
+            <p class="color-blue">verb in the past participle + </p>
+            <p class="color-orange">Complement</p> <br> <br>
+            <b>Example in Past: </b> 1.- Figueroa has driven five years <br> 2.- Teacher has been in love with itzell
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed5 present-perfect">
+          <h2>NEGATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green">Auxilary+ </p>
+            <p class="color-purple">Not + </p>
+            <p class="color-blue">Verb in Past Participle + </p>
+            <p class="color-orange">Complement</p> <br> <br>
+            <b>Example: </b> 1.- Dilan and Centeno have not gone on the superman <br>
+            2.- Dilan and kevin have not kissed anyone
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed6 ejemplo-4">
+          <h2>INTERROGATIVE:</h2> <br>
+          <h4>Structure:</h4> <br>
+          <div>
+
+            <p class="color-green">Auxilary + </p>
+            <p class="color-red">Subject + </p>
+            <p class="color-blue">Verb in Past Participle + </p>
+            <p class="color-orange">Complement + </p>
+            <p class="color-purple">?</p> <br> <br>
+            <b>Example: </b> 1.- Have you worked before? <br>
+            2.- Have you failed English class?
+            </p>
+          </div>
+        </div>
+        
+        <div class="embed15" style="background-color: rgb(164, 73, 73);">
+          <h2>Definition: </h2>
+          <p style="color: yellow; font-size: 18px;">An action or situation that started in the past and continues in the present</p>
+        </div>
+
+
+        <video id="video" src="../Videos/Presente Perfecto (Have_has) - el Teach’a.mp4" controls
+          id="present-perfect-video"></video>
+      </div>
+
+
+
+      <!-- PRESENT PERFECT PROGRESSIVE -->
+
+      <div class="topic-content titulo3" id="present-perfect-progressive-content">
+        <h3>Present Perfect Progressive</h3> <br>
+        
+
+
+        <div class="embed7 ejemplo">
+          <h2>AFFIRMATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green" style="color: rgb(255, 255, 255);">Tense Auxilary + </p>
+            <p class="color-blue">Verb to be in past participle + </p>
+            <p class="color-orange">Special Complement</p> <br> <br>
+            <b>Example in Present: </b> 1.- Adair and Cristal have been dating.<br>
+            2.- Gerardo has been loving evelyn in secret
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed8 progressive">
+          <h2>NEGATIVE</h2> <br>
+          <h4>Structure: </h4> <br>
+          <div>
+            <p class="color-red">Subject + </p>
+            <p class="color-green" style="color: rgb(255, 255, 255);">Tense Auxilary + </p>
+            <p class="color-purple">Not + </p>
+            <p class="color-blue">Verb to be in past participle + </p>
+            <p class="color-orange"> Special Complement</p> <br> <br>
+            <b>Example: </b> 1.- Marlon has not been practicing swimming<br>
+            2.- Ismael has not been sleeping for the last week
+            </p>
+          </div>
+        </div>
+
+
+        <div class="embed9 ejemplo-4">
+          <h2>INTERROGATIVE</h2> <br>
+          <h4>Structure:</h4> <br>
+          <div>
+            <p class="color-green" style="color: rgb(255, 255, 255);">Tense Auxilary + </p>
+            <p class="color-red">Subject + </p>
+            <p class="color-blue">Verb to be in the Past + </p>
+            <p class="color-orange">Special Complement + </p>
+            <p class="color-purple">?</p> <br> <br>
+            <b>Example: </b> 1.- Has Milton been falling in kiraalins arms? <br>
+            2.- Has Rafael been liking Andrea Mora?
+            </p>
+          </div>
+        </div>
+        
+        <div class="embed15" style="background-color: dodgerblue;">
+          <h2>Definition: </h2>
+          <p style="color: rgb(255, 255, 255); font-size: 18px;">Is used to talk about something that started in the past</p>
+        </div>
+
+        <video class="video" id="video" src="../Videos/Present progressive_ continuous explicación 🤷🏻_♂️.mp4" controls
+          id="present-perfect-progressive-video"></video>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/bc48b26896.js" crossorigin="anonymous"></script>
+    <script src="../Code/ingles.js"></script>
+
+</body>
+
+</html>

@@ -12,6 +12,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
+
 ::-webkit-scrollbar {
     width: 20px;
 }
@@ -40,10 +41,10 @@ body {
 
 
 .section {
-    height: 70vh;
+/*     height: 70vh; */
     background-image: linear-gradient(#3300319a, #0d043db3),
-url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-lenguaje-de-codificaci%C3%B3n-para-website-frontend-fondo-medios-mixtos-211355717.jpg');
-    height: 669px;
+        url('img/programacion_imagen_de_fondo-transformed.jpeg');
+    height: 48%;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -80,7 +81,7 @@ url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-
     /* HACE EL EFECTO DE LA NAVEGACION */
     top: 0;
     /* DETERMINA QUE TANTO DE EFECTO HACIA ABAJO HACE, ES ELE EFECTO DEL MAUSE CUADNO BAJO LA PAGINA */
-    margin-top: -150px; 
+    margin-top: -150px;
 }
 
 
@@ -112,8 +113,7 @@ url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-
     top: 50%;
     left: 50%;
     margin-top: -40px;
-    margin-left: -700px;
-
+    margin-left: -45%;
 }
 
 .cecy h1 {
@@ -183,7 +183,7 @@ url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-
 }
 
 /* ESTE ES EL BOTON QUE CAMBIA EL TEMA DE DARK PERO ESTE ES PARA EL TELEFONO */
-.container{
+.container {
     display: none;
 }
 
@@ -289,5 +289,3 @@ url('https://thumbs.dreamstime.com/b/html-web-coding-interfaz-programaci%C3%B3n-
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
-
-
