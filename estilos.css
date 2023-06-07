@@ -3,13 +3,26 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    /* Para que el scroll se detenga en cada sección */
+    scroll-snap-points-y: repeat(50%);
+    /* Ajusta la velocidad del scroll */
+}
+
+
 /* DESDE AQUI EMPIEZA DONDE LE DARE LOS EFECTOS DE DARK O NIGHT AL BODY Y OTRAS COSAS  */
 body {
     font-family: Arial;
-    height: 195vh;
+    height: 280vh;
     background-color: white;
     color: black;
     transition: background-color 0.3s ease;
+    transition: scroll-behavior 0.2s ease-out;
+    /* Ajusta la duración según tus necesidades */
 }
 
 
@@ -41,14 +54,18 @@ body {
 
 
 .section {
-/*     height: 70vh; */
+    /*     height: 70vh; */
     background-image: linear-gradient(#3300319a, #0d043db3),
         url('img/programacion_imagen_de_fondo-transformed.jpeg');
-    height: 48%;
+    height: 33.5%;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
+  
+
+
 
 .title {
     text-align: center;
@@ -82,6 +99,7 @@ body {
     top: 0;
     /* DETERMINA QUE TANTO DE EFECTO HACIA ABAJO HACE, ES ELE EFECTO DEL MAUSE CUADNO BAJO LA PAGINA */
     margin-top: -150px;
+    z-index: 999;
 }
 
 
@@ -123,6 +141,7 @@ body {
     margin-top: -10px;
     margin-left: 430px;
     font-size: 38px;
+    color: blue;
 }
 
 
@@ -288,4 +307,163 @@ body {
 .integrantes {
     font-size: 15px;
     color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+/* COMENTARIOS */
+
+.msj {
+    z-index: 1;
+    margin-top: 52%;
+    height: 37%;
+    background-color: #000000;
+    position: relative;
+}
+
+
+.dark-mode .msj{
+    background: rgba(0, 0, 0, 0);
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 30px;
+    width: 40%;
+    top: 35%;
+    left: -0%;
+    min-height: 10vh;
+    gap: 1rem;
+    font-family: var(--font-paragraph);
+    z-index: -1;
+}
+
+.mensaje{
+    position: absolute;
+    top: 4%;
+    left: 120%;
+    width: 100%;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px auto;
+    background: linear-gradient(90deg, #1a96bc, #2e68cc, #1a96bc, #1a96bc, #2e68cc);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06), -5px -5px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 4px;
+    transition: all .2s;
+    gap: 1rem;
+    padding: 40px 40px;
+}
+
+#form p:first-child {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#form .contact-box {
+    position: relative;
+}
+
+#form .contact-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+#form .contact-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+#form .contact-box input:focus ~ label,
+#form .contact-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 1rem;
+    color: var(--color-header);
+}
+
+.contact-area textarea {
+    background: #485563; 
+    background: -webkit-linear-gradient(to right, #29323c, #485563); 
+    background: linear-gradient(to right, #29323c, #485563);
+    border: none;
+    resize: vertical;
+    padding: 20px;
+    caret-color: white;
+    color: white;
+    height: 200px;
+}
+
+.contact-area textarea:focus {
+    box-shadow: 0 1px 1px rgba(179, 170, 50, 0.075)inset, 0 0 8px #288af3;
+    outline: 0 none;
+}
+
+textarea::placeholder {
+    color: #ffffff;
+}
+
+.submit {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.submit input {
+    padding: 10px 40px;
+    background-color: #543ece;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-family: var(--font-paragraph);
+    font-weight: 600;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.submit input:hover {
+    transform: scale(0.97);
+    background-color: #051d41;
 }

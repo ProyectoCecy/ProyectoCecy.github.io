@@ -14,7 +14,7 @@
 
 <body>
 
-  
+
   <section class="section">
     <h1 class="title">¡Bienvenidos a nuestra página! Somos un grupo de cuatro personas dedicadas a la creación de un
       proyecto
@@ -29,7 +29,7 @@
 
 
     <!-- Nombre de los integrantes y del jefe del equipo -->
-    <div class="equipo">
+    <div class="equipo" style="display: none;">
       <div class="integrantes">
         <h1>Jefe del equipo: </h1>
         <h1>• Milton Daniel Contreras Coeto </h1> <br>
@@ -71,12 +71,11 @@
         <h3>Temas</h3>
         <div class="theme-buttons">
           <button id="theme-light" class="theme-button active" data-theme="light">
-            <img id="light-image" src="./img/imagen del sol en temas.png" width="20px" height="20px"
-              class="theme-icon">
+            <img id="light-image" src="./img/imagen del sol en temas.png" width="20px" height="20px" class="theme-icon">
           </button>
           <button id="theme-dark" class="theme-button" data-theme="dark">
-            <img id="dark-image" src="./img/imagen de la luna en temas.png"
-              width="20px" height="20px" class="theme-icon">
+            <img id="dark-image" src="./img/imagen de la luna en temas.png" width="20px" height="20px"
+              class="theme-icon">
           </button>
         </div>
       </div>
@@ -95,37 +94,6 @@
   <div>
 
 
-    <!-- Datoas para que se contacten con nosotros y derechos de autor -->
-
-    <footer class="footer" id="toggle-theme">
-      <div class="derechos">
-        <div class="copyright">
-          <label>Copyright © 2023 Equipo 5. Todos los derechos reservados.
-          </label>
-
-          <div class="dropdown">
-            <input type="button" class="dropbtn" value="contactanos">
-            <div class="dropdown-content">
-              <a href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge Daniel</a>
-              <a href="mailto:support@example.com">Milton Daniel</a> <!-- <br> -->
-              <!--  Para que se vea en el dispositivo mobile -->
-              <div class="br-contactos">
-                <a href="mailto:sales@example.com">Cesar Enrique</a>
-                <a href="mailto:sales@example.com">Melisa Aranza</a>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </footer>
-
-
-
-
-
-
     <!-- CADA MATERIA VAN A ESTAR ORDENADOS CON ESTE FORM PARA QUE CADA MATERIA TENGA UN STYLE DISTINTO  -->
 
     <!-- Ecologia --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
@@ -138,18 +106,17 @@
 
       <h1 class="name">Ecologia</h1>
 
-      <a href="./ecologia/ecologia.html"><input class="btn centrar" type="button"
-          value="Ingresar a la materia"></a>
+      <a href="./ecologia/ecologia.html"><input class="btn centrar" type="button" value="Ingresar a la materia"></a>
 
     </form>
-    <div class="spam-ecologia">
+   <!--  <div class="spam-ecologia">
       <h2>
         <img src="./img/ecologia img de datos.png" alt="">
       </h2>
       <h1>
         Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
         • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
-      </h1>
+      </h1> -->
     </div>
 
     <!-- Calculo --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
@@ -165,7 +132,7 @@
 
     </form>
 
-    <div class="spam-calculo">
+<!--     <div class="spam-calculo">
       <h2>
         <img src="./img/calculo img de datos.png" alt="">
       </h2>
@@ -173,7 +140,7 @@
         Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
         • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
       </h1>
-    </div>
+    </div> -->
 
 
     <!-- Ingles --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
@@ -189,7 +156,7 @@
 
     </form>
 
-    <div class="spam-ingles">
+<!--     <div class="spam-ingles">
       <h2>
         <img src="./img/ingles img de datos.png" alt="">
       </h2>
@@ -197,7 +164,7 @@
         Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
         • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
       </h1>
-    </div>
+    </div> -->
 
 
     <!-- Fisica --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
@@ -213,7 +180,7 @@
 
     </form>
 
-    <div class="spam-fisica">
+<!--     <div class="spam-fisica">
       <h2>
         <img src="./img/fisica img de datos.png" alt="">
       </h2>
@@ -221,12 +188,86 @@
         Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
         • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
       </h1>
-    </div>
+    </div> -->
 
   </div>
 
+  <!-- RESENAS -->
+
+  <div class="msj">
+    <section id="contact" class="contacts contacts__container">
+      <aside class="aside__subtitle">
+        <div>
+          <h2 class="title">Contact</h2>
+
+        </div>
+      </aside>
+      <form id="form">
+        <div class="contact-box">
+          <input name="name" type="text" required>
+          <label>Nombre</label>
+        </div>
+
+        <div class="contact-box">
+          <input name="email" type="email" required>
+          <label>Correo electronico</label>
+        </div>
+
+        <div class="contact-box">
+          <input name="subject" type="text" required>
+          <label>Asunto</label>
+        </div>
+      </form>
+
+      <form action="" class="mensaje">
+        
+        <div class="contact-area">
+          <label style="color: white;">Mensaje</label>
+          <textarea name="message" id="message" style="resize: none;" required placeholder="Escribe aquí tu mensaje."></textarea>
+        </div>
+        <div class="submit">
+          <input type="submit" value="Enviar Mensaje">
+        </div>
+      </form>
+    </section>
+  </div>
+
+
+
+  <!-- FOOTER -->
+
+  <!-- Datoas para que se contacten con nosotros y derechos de autor -->
+
+  <footer class="footer" id="toggle-theme">
+    <div class="derechos">
+      <div class="copyright">
+        <label>Copyright © 2023 Equipo 5. Todos los derechos reservados.
+        </label>
+
+        <div class="dropdown">
+          <input type="button" class="dropbtn" value="contáctanos">
+          <div class="dropdown-content">
+            <a href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge Daniel</a>
+            <a href="mailto:support@example.com">Milton Daniel</a> <!-- <br> -->
+            <!--  Para que se vea en el dispositivo mobile -->
+            <div class="br-contactos">
+              <a href="mailto:sales@example.com">Cesar Enrique</a>
+              <a href="mailto:sales@example.com">Melisa Aranza</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
   <script src="./Code/code.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+
 </body>
 
 </html>
