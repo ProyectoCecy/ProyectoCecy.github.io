@@ -10,7 +10,7 @@
 
         background-image: linear-gradient(#3300319a, #0d043db3),
             url('img/programacion_imagen_de_fondo-transformed.jpeg');
-        height: 48%;
+        height: 44%;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -40,7 +40,7 @@
     }
 
     body {
-        height: 197vh;
+        height: 217vh;
     }
 
     .name {
@@ -551,6 +551,54 @@
     }
 
 
+    /* COMENTARIOS */
 
+    /*    .contacts__container {
+        top: 100px;
+        left: 0;
+        width: 100%;
+        margin-bottom: 120px;
+    }       
+ */
+
+    /* Con este se determina el tamno del fondo negro */
+    .msj {
+        /* Con este se sabra si se puede escribir o no */
+        z-index: 1;
+        margin-top: 98%;
+        height: 58%;
+        background-color: #000000;
+        position: relative;
+    }
+
+    /* Con este se puede mover el contenedor de la parte de escribir */
+    .contacts__container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0 30px;
+        width: 40%;
+        top: -0%;
+        left: -0%;
+        min-height: 10vh;
+        gap: 1rem;
+        font-family: var(--font-paragraph);
+    }
+
+
+    .mensaje {
+        position: absolute;
+        top: 695%;
+        left: 50%;
+        width: 100%;
+    }
+
+    #form{
+        width: 85%;
+        position: absolute;
+        top: 240%;
+        left: 50%;
+        height: 300%;
+    }
 
 }

@@ -61,9 +61,10 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    z-index: 999;
 }
 
-  
+
 
 
 
@@ -320,6 +321,7 @@ body {
 /* COMENTARIOS */
 
 .msj {
+    /* Con este se sabra si se puede escribir o no */
     z-index: 1;
     margin-top: 52%;
     height: 37%;
@@ -328,10 +330,10 @@ body {
 }
 
 
-.dark-mode .msj{
+.dark-mode .msj {
     background: rgba(0, 0, 0, 0);
 }
-
+/* CONTENIDO DE COMENTARIOS ETC */
 .contacts__container {
     display: flex;
     flex-direction: column;
@@ -343,10 +345,9 @@ body {
     min-height: 10vh;
     gap: 1rem;
     font-family: var(--font-paragraph);
-    z-index: -1;
 }
 
-.mensaje{
+.mensaje {
     position: absolute;
     top: 4%;
     left: 120%;
@@ -361,8 +362,8 @@ body {
     margin: 20px auto;
     background: linear-gradient(90deg, #1a96bc, #2e68cc, #1a96bc, #1a96bc, #2e68cc);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06), -5px -5px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur( 13px );
-    -webkit-backdrop-filter: blur( 13px );
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
     border-radius: 4px;
     transition: all .2s;
     gap: 1rem;
@@ -406,8 +407,8 @@ body {
     transition: .5s;
 }
 
-#form .contact-box input:focus ~ label,
-#form .contact-box input:valid ~ label {
+#form .contact-box input:focus~label,
+#form .contact-box input:valid~label {
     top: -20px;
     left: 0;
     color: #fff;
@@ -423,8 +424,8 @@ body {
 }
 
 .contact-area textarea {
-    background: #485563; 
-    background: -webkit-linear-gradient(to right, #29323c, #485563); 
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563);
     background: linear-gradient(to right, #29323c, #485563);
     border: none;
     resize: vertical;

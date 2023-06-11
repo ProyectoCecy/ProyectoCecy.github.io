@@ -211,6 +211,8 @@
 /*   margin-top: 47.5%;
   margin-left: -13.9%; */
   border-radius: 25px;
+  /* CON ESTO EL CONTENEDRO DE LA MATERIA NO LE DA EL EFECTO DE LA NIEVE */
+  z-index: 2;
 }
 
 .ecologia img {
@@ -289,6 +291,8 @@
   left: 11.5%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
+    /* CON ESTO EL CONTENEDRO DE LA MATERIA NO LE DA EL EFECTO DE LA NIEVE */
+    z-index: 2;
 }
 
 :not(.color-off) .calculo:hover {
@@ -364,7 +368,8 @@
   left: 62%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
-
+  /* CON ESTO EL CONTENEDRO DE LA MATERIA NO LE DA EL EFECTO DE LA NIEVE */
+  z-index: 2;
 }
 
 :not(.color-off) .ingles:hover {
@@ -445,7 +450,8 @@
   left: 86.9%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
-
+  /* CON ESTO EL CONTENEDRO DE LA MATERIA NO LE DA EL EFECTO DE LA NIEVE */
+  z-index: 2;
 }
 
 .fisica img {
