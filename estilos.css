@@ -323,8 +323,8 @@ body {
 .msj {
     /* Con este se sabra si se puede escribir o no */
     z-index: 1;
-    margin-top: 52%;
-    height: 37%;
+    margin-top: 60%;
+    height: 36%;
     background-color: #000000;
     position: relative;
 }
@@ -367,7 +367,7 @@ body {
     border-radius: 4px;
     transition: all .2s;
     gap: 1rem;
-    padding: 40px 40px;
+    padding: 50px 40px;
 }
 
 #form p:first-child {
