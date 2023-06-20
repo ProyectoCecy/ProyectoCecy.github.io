@@ -1,5 +1,5 @@
 
-
+/* 
 document.getElementById('calculo').addEventListener('click', calculo);
 document.getElementById('fisica').addEventListener('click', fisica);
 
@@ -16,7 +16,7 @@ function calculo(event) {
     icon: "info",
     buttons: true,
     dangerMode: true
-  });
+  }); */
 
 
 
@@ -52,9 +52,10 @@ function calculo(event) {
             })
           }
         }) */
-}
+/* }
+ */
 
-
+/* 
 function fisica(event) {
   event.preventDefault()
 
@@ -67,7 +68,7 @@ function fisica(event) {
   });
 
 }
-
+ */
 /* La funcion de este codigo hace que se cambie de color el body junto con las cosas que tengan la clase de .dark-mode 
 
  const themeLightButton = document.getElementById("theme-light");
@@ -362,9 +363,65 @@ window.addEventListener('load', function() {
 
 
 
+
+
+
+
+/* ECOLOGIA, ENTRAR A LA MATERIA */
+
+
+document.getElementById('ecologia').addEventListener('click', function() {
+  window.location.href = "./ecologia/ecologia.html";
+});
+
+
+/* CALCULO, ENTRAR A LA MATERIA */
+
+document.getElementById('calculo1').addEventListener('click', function(event) {
+  event.preventDefault(); // Evita que se realice la redirección predeterminada
+
+  swal({
+    title: "Aviso!",
+    text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
+    icon: "info",
+    buttons: true,
+    dangerMode: true
+  });
+});
+
+
+/* INGLES, ENTRAR A LA MATERIA */
+
+document.getElementById('ingles').addEventListener('click', function() {
+  window.location.href = "./ingles/ingles.html";
+});
+
+
+/* FISICA, ENTRAR A LA MATERIA */
+
+document.getElementById('fisica1').addEventListener('click', function(event) {
+  event.preventDefault(); // Evita que se realice la redirección predeterminada
+
+  swal({
+    title: "Aviso!",
+    text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
+    icon: "info",
+    buttons: true,
+    dangerMode: true
+  });
+});
+
+
+
+
+
+
+
+
+
 /* ESTA PARTE ES DE LA LIBRERIA: https://app.embed.im/snow.js Como no se podia poner bien, se extrajo el codigo que venia del enlace */
 
-
+/* 
 var embedimSnow = document.getElementById("embedim--snow");
 
 if (!embedimSnow) {
@@ -404,4 +461,9 @@ if (!embedimSnow) {
 
   var msjDiv = document.querySelector(".msj");
   msjDiv.appendChild(embedimSnow);
-}
+} */
+
+
+
+
+

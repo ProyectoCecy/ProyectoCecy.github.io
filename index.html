@@ -10,10 +10,18 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="telefono.css">
   <link rel="stylesheet" href="tabletas.css">
+  <link rel="stylesheet" href="login/login.css">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 
 <body>
 
+  <?php
+  // esto sólo va en la página principal
+  require_once 'visitas.php';
+  ?>
 
   <section class="section">
     <h1 class="title">¡Bienvenidos a nuestra página! Somos un grupo de cuatro personas dedicadas a la creación de un
@@ -42,13 +50,12 @@
   </section>
 
 
-
-
   <nav class="nav">
 
 
+
     <!-- Darle efectos al hover o no -->
-    <div class="quitar-efectos">
+    <div class="quitar-efectos" id="efectos5">
       <button id="color-button" class="color-on">Colores: Activos</button>
     </div>
 
@@ -66,7 +73,7 @@
 
 
     <!-- Cambiar el tema a black o en white el body -->
-    <div class="container">
+    <div class="containerr" style="margin-left: -50%;">
       <div class="theme-toggle-container">
         <h3>Temas</h3>
         <div class="theme-buttons">
@@ -81,7 +88,14 @@
       </div>
     </div>
 
+
   </nav>
+
+  <p class="visitas">Este sitio ha sido visitado
+    <?php
+    require_once 'visitas.php';
+    ?>
+  </p>
 
 
 
@@ -98,136 +112,197 @@
 
     <!-- Ecologia --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
 
-    <form class="ecologia" id="ecologia">
 
-      <img
-        src="https://4.bp.blogspot.com/-BIsXM831Nbo/WSDcvv0TwEI/AAAAAAAAAEA/ZvzOWrDc-8kgjjGMU08Jz7Arl7XyG1pBQCLcB/s1600/Ecologia.gif"
-        alt="">
+    <!-- CON ESTE DIV HACE QUE SELECCIONE TODAS LAS MATERIAS Y PUEDA DESAPARECERLAS AL MISMO TIMEPO EN JS -->
+    <div class="ocultar-materias" id="ocultar-materias">
 
-      <h1 class="name">Ecologia</h1>
+      <form class="ecologia" id="ecologia" onclick="ecologia()" style="cursor: pointer;">
 
-      <a href="./ecologia/ecologia.html"><input class="btn centrar" type="button" value="Ingresar a la materia"></a>
+        <img
+          src="https://4.bp.blogspot.com/-BIsXM831Nbo/WSDcvv0TwEI/AAAAAAAAAEA/ZvzOWrDc-8kgjjGMU08Jz7Arl7XyG1pBQCLcB/s1600/Ecologia.gif"
+          alt="">
 
-    </form>
-   <!--  <div class="spam-ecologia">
-      <h2>
-        <img src="./img/ecologia img de datos.png" alt="">
-      </h2>
-      <h1>
-        Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
-        • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
-      </h1> -->
+        <h1 class="name">Ecologia</h1>
+
+        <!--       <a href="./ecologia/ecologia.html"><input class="btn centrar" type="button" value="Ingresar a la materia"></a> -->
+
+      </form>
+
+      <!--  <div class="spam-ecologia">
+        <h2>
+          <img src="./img/ecologia img de datos.png" alt="">
+        </h2>
+        <h1>
+          Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
+          • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
+        </h1> -->
+
+
+
+
+      <!-- Calculo --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
+
+      <form class="calculo" id="calculo1" style="cursor: pointer;">
+
+
+        <img src="https://pbs.twimg.com/profile_images/1332376553/FCFM.png" alt="">
+
+        <h1 class="name">Calculo Diferencial</h1>
+
+
+
+      </form>
+
+      <!--     <div class="spam-calculo">
+        <h2>
+          <img src="./img/calculo img de datos.png" alt="">
+        </h2>
+        <h1>
+          Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
+          • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
+        </h1>
+      </div> -->
+
+
+      <!-- Ingles --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
+
+      <form class="ingles" id="ingles" style="cursor: pointer;">
+
+        <img src="https://docentesopositores.com/wp-content/uploads/2022/08/curso-ingles.png" alt="">
+
+        <h1 class="name">English</h1>
+
+        <!--   <a href="./ingles/ingles.html"><input class="btn3 centrar" id="ingles-button" type="button" value="Enter"></a> -->
+
+
+      </form>
+
+      <!--     <div class="spam-ingles">
+        <h2>
+          <img src="./img/ingles img de datos.png" alt="">
+        </h2>
+        <h1>
+          Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
+          • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
+        </h1>
+      </div> -->
+
+
+      <!-- Fisica --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
+
+      <form class="fisica" id="fisica1" style="cursor: pointer;">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/926/926324.png" alt="">
+
+        <h1 class="name">Fisica</h1>
+
+
+      </form>
+
+      <!--     <div class="spam-fisica">
+        <h2>
+          <img src="./img/fisica img de datos.png" alt="">
+        </h2>
+        <h1>
+          Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
+          • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
+        </h1>
+      </div> -->
+
     </div>
 
-    <!-- Calculo --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
-
-    <form class="calculo" id="calculo1">
+  </div>
 
 
-      <img src="https://pbs.twimg.com/profile_images/1332376553/FCFM.png" alt="">
-
-      <h1 class="name">Calculo Diferencial</h1>
-
-      <a href="#"><input id="calculo" class="btn2 centrar" type="button" value="Ingresar a la materia"></a>
-
-    </form>
-
-<!--     <div class="spam-calculo">
-      <h2>
-        <img src="./img/calculo img de datos.png" alt="">
-      </h2>
-      <h1>
-        Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
-        • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
-      </h1>
-    </div> -->
 
 
-    <!-- Ingles --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
-
-    <form class="ingles" id="ingles">
-
-      <img src="https://docentesopositores.com/wp-content/uploads/2022/08/curso-ingles.png" alt="">
-
-      <h1 class="name">English</h1>
-
-      <a href="./ingles/ingles.html"><input class="btn3 centrar" id="ingles-button" type="button" value="Enter"></a>
 
 
-    </form>
+  <!-- PARTE DEL LOGIN -->
 
-<!--     <div class="spam-ingles">
-      <h2>
-        <img src="./img/ingles img de datos.png" alt="">
-      </h2>
-      <h1>
-        Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
-        • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
-      </h1>
-    </div> -->
+  <div class="login" id="login" onclick="inicio()">
+    <img src="img/user.png" alt="">
+  </div>
+
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <h2>¿Deseas iniciar sesión?</h2>
+      <button class="iniciar" onclick="iniciarSesion()">Sí</button>
+      <button class="cancelar" id="cancelar" onclick="cancelar()">Cancelar</button>
+    </div>
+  </div>
 
 
-    <!-- Fisica --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  --> <!--  -->
+  <div id="register" style="display: none;">
 
-    <form class="fisica" id="fisica1">
+    <div class="custom-section" id="custom-section">  
+      <div class="contenedor">
+        <div class="row full-height justify-content-center">
+          <div class="col-12 text-center align-self-center py-5">
+            <div class="custom-section pb-5 pt-5 pt-sm-2 text-center">
+              <h6 class="mb-0 pb-3" style="/* margin-left: -50%; position: absolute; margin-top: 50%; */"><span>Log In</span><span>Sign Up</span></h6>
+              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"  style="margin-left: -150%; position: absolute; margin-top: 50%;" />
+              <label for="reg-log"></label>
+              <div class="card-3d-wrap mx-auto">
+                <div class="card-3d-wrapper">
+                  <div class="card-front">
+                    <div class="center-wrap">
+                      <div class="custom-section text-center">
+                        <h4 class="mb-4 pb-3">Log In</h4>
+                        <div class="form-group">
+                          <input type="email" class="form-style" placeholder="Email">
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input type="password" class="form-style" placeholder="Password">
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <a href="https://www.web-leb.com/code" class="btn mt-4" style="color: white;">Login</a>
+                        <p class="mb-0 mt-4 text-center"><a href="https://www.web-leb.com/code" class="link">Forgot your
+                            password?</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-back">
+                    <div class="center-wrap">
+                      <div class="custom-section text-center">
+                        <form action="register.php" method="post">
+                          <h4 class="mb-3 pb-3">Sign Up</h4>
+                          <div class="form-group">
+                            <input type="text" class="form-style" placeholder="Full Name" name="name">
+                            <i class="input-icon uil uil-user"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input type="tel" class="form-style" placeholder="Phone Number" name="phone">
+                            <i class="input-icon uil uil-phone"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input type="email" class="form-style" placeholder="Email" name="email">
+                            <i class="input-icon uil uil-at"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input type="password" class="form-style" placeholder="Password" name="pass">
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          <button type="submit" class="btnform mt-4" name="send" style="color: white;">Register</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <img src="https://cdn-icons-png.flaticon.com/512/926/926324.png" alt="">
 
-      <h1 class="name">Fisica</h1>
-
-      <a href="#"><input id="fisica" class="btn5 centrar" itemid="fisica-button" type="button"
-          value="Ingresar a la materia"></a>
-
-    </form>
-
-<!--     <div class="spam-fisica">
-      <h2>
-        <img src="./img/fisica img de datos.png" alt="">
-      </h2>
-      <h1>
-        Alumnos del proyecto: <br> • Milton Daniel Contreras Coeto <br> • Cesar Enrique Tapia Lopez <br>
-        • Melisa Aranza Garcia Hidalgo <br> • Jorge Daniel Grande Quintana
-      </h1>
-    </div> -->
 
   </div>
 
-  <!-- RESENAS -->
 
-  <div class="msj">
-    <section id="contact" class="contacts contacts__container">
-      <aside class="aside__subtitle">
-        <div>
 
-        </div>
-      </aside>
-      <form id="form">
-        <div class="contact-box">
-          <input name="name" type="text" required>
-          <label>Nombre</label>
-        </div>
-
-        <div class="contact-box">
-          <input name="email" type="email" required>
-          <label>Correo electronico</label>
-        </div>
-
-      </form>
-
-      <form action="" class="mensaje">
-        
-        <div class="contact-area">
-          <label style="color: white;">Mensaje</label>
-          <textarea name="message" id="message" style="resize: none;" required placeholder="Escribe aquí tu mensaje."></textarea>
-        </div>
-        <div class="submit">
-          <input type="submit" value="Enviar Mensaje">
-        </div>
-      </form>
-    </section>
-  </div>
-
- 
 
 
   <!-- FOOTER -->
@@ -262,7 +337,12 @@
 
 
   <script src="./Code/code.js"></script>
+  <script src="./Code/login.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+
+  <?php
+  require_once 'cerrar.php';
+  ?>
 
 </body>
 

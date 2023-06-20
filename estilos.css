@@ -3,26 +3,13 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
-    /* Para que el scroll se detenga en cada sección */
-    scroll-snap-points-y: repeat(50%);
-    /* Ajusta la velocidad del scroll */
-}
-
-
 /* DESDE AQUI EMPIEZA DONDE LE DARE LOS EFECTOS DE DARK O NIGHT AL BODY Y OTRAS COSAS  */
 body {
     font-family: Arial;
-    height: 280vh;
+    height: 195vh;
     background-color: white;
     color: black;
     transition: background-color 0.3s ease;
-    transition: scroll-behavior 0.2s ease-out;
-    /* Ajusta la duración según tus necesidades */
 }
 
 
@@ -57,16 +44,11 @@ body {
     /*     height: 70vh; */
     background-image: linear-gradient(#3300319a, #0d043db3),
         url('img/programacion_imagen_de_fondo-transformed.jpeg');
-    height: 33.5%;
+    height: 48%;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    z-index: 999;
 }
-
-
-
-
 
 .title {
     text-align: center;
@@ -100,7 +82,6 @@ body {
     top: 0;
     /* DETERMINA QUE TANTO DE EFECTO HACIA ABAJO HACE, ES ELE EFECTO DEL MAUSE CUADNO BAJO LA PAGINA */
     margin-top: -150px;
-    z-index: 999;
 }
 
 
@@ -142,7 +123,6 @@ body {
     margin-top: -10px;
     margin-left: 430px;
     font-size: 38px;
-    color: blue;
 }
 
 
@@ -176,7 +156,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-left: -300px;
+    margin-left: 15%;
     margin-top: 30px;
 }
 
@@ -310,161 +290,32 @@ body {
     color: rgb(255, 255, 255);
 }
 
-
-
-
-
-
-
-
-
-/* COMENTARIOS */
-
-.msj {
-    /* Con este se sabra si se puede escribir o no */
-    z-index: 1;
-    margin-top: 60%;
-    height: 36%;
-    background-color: #000000;
-    position: relative;
-}
-
-
-.dark-mode .msj {
-    background: rgba(0, 0, 0, 0);
-}
-/* CONTENIDO DE COMENTARIOS ETC */
-.contacts__container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding: 0 30px;
-    width: 40%;
-    top: 35%;
-    left: -0%;
-    min-height: 10vh;
-    gap: 1rem;
-    font-family: var(--font-paragraph);
-}
-
-.mensaje {
+.visitas {
     position: absolute;
-    top: 4%;
-    left: 120%;
-    width: 100%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(140, 255, 0);
 }
 
-#form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 20px auto;
-    background: linear-gradient(90deg, #1a96bc, #2e68cc, #1a96bc, #1a96bc, #2e68cc);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.06), -5px -5px 10px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(13px);
-    -webkit-backdrop-filter: blur(13px);
-    border-radius: 4px;
-    transition: all .2s;
-    gap: 1rem;
-    padding: 50px 40px;
-}
-
-#form p:first-child {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-#form .contact-box {
-    position: relative;
-}
-
-#form .contact-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-
-#form .contact-box label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-
-#form .contact-box input:focus~label,
-#form .contact-box input:valid~label {
-    top: -20px;
-    left: 0;
-    color: #fff;
-    font-size: 12px;
-}
-
-.contact-area {
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    gap: 1rem;
-    color: var(--color-header);
-}
-
-.contact-area textarea {
-    background: #485563;
-    background: -webkit-linear-gradient(to right, #29323c, #485563);
-    background: linear-gradient(to right, #29323c, #485563);
-    border: none;
-    resize: vertical;
-    padding: 20px;
-    caret-color: white;
+.dark-mode .visitas {
     color: white;
-    height: 200px;
 }
 
-.contact-area textarea:focus {
-    box-shadow: 0 1px 1px rgba(179, 170, 50, 0.075)inset, 0 0 8px #288af3;
-    outline: 0 none;
+
+
+.login {
+    position: fixed;
+    top: 15px;
+    left: 80%;
+    transform: translateX(-50%);
+    background-color: #03acc2;
+    width: 90px;
+    border-radius: 30%;
+    z-index: 999999;
 }
 
-textarea::placeholder {
-    color: #ffffff;
-}
-
-.submit {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.submit input {
-    padding: 10px 40px;
-    background-color: #543ece;
-    border-radius: 4px;
-    color: #fff;
-    text-transform: uppercase;
-    border: none;
-    font-family: var(--font-paragraph);
-    font-weight: 600;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.submit input:hover {
-    transform: scale(0.97);
-    background-color: #051d41;
+.login img {
+    /* DETERMINA EL ESPACIO DEL FONDO DEL USER */
+    width: 100%;
 }

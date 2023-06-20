@@ -1,631 +1,28 @@
-/* IPHONE 12 PRO */
-
-@media screen and (min-width: 390px) and (max-width: 391px) {
-  /*     body {
-          text-align: center;
-          background-image: url("https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/images/CUAUTITL%C3%81N.jpg");
-          background-size: 700px 703px; */
-  /*  background-position: -50px 0px;
-          background-repeat: no-repeat; */
-  /* } 
-       background-position: center;
-          margin-top: 45%;
-      */
-
-
-
-  .name {
-    font-size: 18px;
-    padding-top: 15px;
-  }
-
-  .section {
-    height: 47%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
-  .centrar {
-    margin-top: 40%;
-  }
-
-  .ecologia {
-
-    width: 45%;
-    height: 250px;
-    background: rgba(128, 128, 128, 0.689);
-    position: absolute;
-    justify-content: center;
-    text-align: center;
-    top: 150%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-  }
-
-  .ecologia img {
-    width: 90px;
-    height: 90px;
-    margin-top: 15px;
-  }
-
-  .ecologia:hover {
-    background: linear-gradient(250deg, #33cc33, rgba(0, 208, 255, 0.712));
-    /*  background-color: #33cc33; */
-    color: #fff;
-  }
-
-  .btn {
-
-    background: linear-gradient(250deg, rgba(0, 208, 255, 0.712), #33cc33);
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 18px;
-    width: 145px;
-    height: 30px;
-    font-family: fantasy;
-    color: blue;
-    font-size: 12px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-  }
-
-
-  .spam-ecologia {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-left: 0%;
-    margin-top: 265px;
-    z-index: -999;
-    /* Hace que se haga transparente en los demas objetos */
-    text-align: center;
-    /* Reduce el tiempo cuando se quita el hover */
-    transition: all 100ms ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-  }
-
-  .spam-ecologia img {
-    border-radius: 15%;
-    width: 310px;
-    height: 252px;
-  }
-
-  .spam-ecologia h1 {
-    font-size: 14px;
-    position: fixed;
-    margin-top: -47%;
-    margin-left: 12%;
-    color: rgb(8, 143, 1);
-  }
-
-  .ecologia:hover+.spam-ecologia {
-    /* Es el tiempo que se toma para que aparezca */
-    transition: all 600ms ease-in-out;
-    opacity: 1;
-    visibility: visible;
-  }
-
-
-  /* Calculo */
-
-
-  .calculo {
-    width: 45%;
-    height: 250px;
-    background: rgba(128, 128, 128, 0.689);
-    position: absolute;
-    text-align: center;
-    top: 117%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-
-  }
-
-  .calculo:hover {
-    background: linear-gradient(250deg, red, blue);
-  }
-
-  .calculo img {
-    width: 90px;
-    height: 90px;
-    margin-top: 15px;
-  }
-
-  .btn2 {
-    background: linear-gradient(250deg, red, blue);
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 12px;
-    width: 145px;
-    height: 30px;
-    font-family: fantasy;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-  }
-
-
-  .spam-calculo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-left: 0%;
-    margin-top: 265px;
-    z-index: -999;
-    /* Hace que se haga transparente en los demas objetos */
-    text-align: center;
-    /* Reduce el tiempo cuando se quita el hover */
-    transition: all 100ms ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-  }
-
-  .spam-calculo img {
-    border-radius: 15%;
-    width: 310px;
-    height: 252px;
-  }
-
-  .spam-calculo h1 {
-    font-size: 14px;
-    position: fixed;
-    margin-top: -47%;
-    margin-left: 12%;
-    color: rgb(0, 106, 255);
-  }
-
-  .calculo:hover+.spam-calculo {
-    transition: all 600ms ease-in-out;
-    opacity: 1;
-    visibility: visible;
-  }
-
-  /* Ingles */
-
-  .ingles {
-
-    width: 45%;
-    height: 250px;
-    background: rgba(128, 128, 128, 0.689);
-    position: absolute;
-    text-align: center;
-    top: 150%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-
-  }
-
-  .ingles:hover {
-    background: linear-gradient(360deg, white, red, white,
-        red, white,
-        red, white,
-        red, white,
-        blue, white, blue, white);
-  }
-
-  .ingles img {
-    width: 90px;
-    height: 90px;
-    margin-top: 15px;
-  }
-
-  .slider .slide img {
-    width: 120px;
-    height: 35px;
-    padding: 5px;
-    background-color: rgb(69, 69, 69);
-    cursor: pointer;
-    margin: 48px;
-    border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  }
-
-  .btn3 {
-    width: 145px;
-    height: 30px;
-    border-radius: 25px;
-    background: linear-gradient(360deg, rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
-        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
-        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
-        rgba(255, 255, 255, 0.675), rgba(91, 91, 91, 0.609), rgba(255, 255, 255, 0.668),
-        blue, white, blue, white);
-    font-size: 14px;
-    color: rgb(248, 5, 5);
-    font-family: fantasy;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-  }
-
-
-  .spam-ingles {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-left: 0%;
-    margin-top: 265px;
-    z-index: -999;
-    /* Hace que se haga transparente en los demas objetos */
-    text-align: center;
-    /* Reduce el tiempo cuando se quita el hover */
-    transition: all 100ms ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-  }
-
-  .spam-ingles img {
-    border-radius: 15%;
-    width: 310px;
-    height: 252px;
-  }
-
-  .spam-ingles h1 {
-    font-size: 14px;
-    position: fixed;
-    margin-top: -47%;
-    margin-left: 12%;
-    color: rgba(86, 110, 122, 255);
-  }
-
-  .ingles:hover+.spam-ingles {
-    transition: all 600ms ease-in-out;
-    opacity: 1;
-    visibility: visible;
-  }
-
-
-  /* fisica */
-
-  .fisica {
-    width: 45%;
-    height: 250px;
-    background: rgba(128, 128, 128, 0.689);
-    position: absolute;
-    text-align: center;
-    top: 117%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    border-radius: 25px;
-
-  }
-
-  .fisica img {
-
-    width: 90px;
-    height: 90px;
-    margin-top: 15px;
-  }
-
-  .fisica:hover {
-    background: linear-gradient(300deg, red, green, blue, orangered,
-        red, green, blue, orange);
-  }
-
-  .btn5 {
-    background: linear-gradient(300deg, rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 68, 0, 0.638),
-        rgba(255, 0, 0, 0.638), rgba(0, 128, 0, 0.638), rgba(0, 0, 255, 0.638), rgba(255, 166, 0, 0.638));
-    font-size: 12px;
-    width: 145px;
-    height: 30px;
-    border-radius: 25px;
-    font-family: fantasy;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
-  .spam-fisica {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-left: 0%;
-    margin-top: 265px;
-    z-index: -999;
-    /* Hace que se haga transparente en los demas objetos */
-    text-align: center;
-    /* Reduce el tiempo cuando se quita el hover */
-    transition: all 100ms ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
-  }
-
-  .spam-fisica img {
-    border-radius: 15%;
-    width: 310px;
-    height: 252px;
-  }
-
-  .spam-fisica h1 {
-    font-size: 14px;
-    position: fixed;
-    margin-top: -47%;
-    margin-left: 12%;
-    color: rgba(29, 31, 34, 255);
-  }
-
-  .fisica:hover+.spam-fisica {
-    transition: all 600ms ease-in-out;
-    opacity: 1;
-    visibility: visible;
-  }
-
-
-
-
-  /* Button para quitar los colores al hover de las materias */
-
-  #color-button {
-    background-color: rgb(255, 0, 0);
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 15px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-left: 100px;
-    margin-top: -125px;
-  }
-
-  .equipo {
-    /* Se oculta ya que en el hover de las materias se muestra los nombres de integrantes */
-
-    /*     width: 420px;
-          height: 100px;
-          justify-content: center;
-          background: rgb(94, 92, 92);
-          left: 50%;
-          top: 50%;
-          position: absolute;
-          transform: translate(-50%, 100%);
-          text-align: center;
-          border-radius: 25px; */
-    display: none;
-    margin-left: 235px;
-    margin-top: -20px;
-    background: transparent;
-  }
-
-  /* ESTE ES PARA DISPOSITIVOS MOBILES */
-  .nav .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: -250px;
-    margin-left: -280px;
-  }
-
-  .nav {
-    /* DETERMINA QUE TANTO DE EFECTO HACIA ABAJO HACE, ES ELE EFECTO DEL MAUSE CUADNO BAJO LA PAGINA */
-    margin-top: 0px;
-  }
-
-  .cecy img {
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: -690%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    z-index: -999;
-  }
-
-  .cecy h1 {
-    position: absolute;
-    top: -740%;
-    left: -60%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: rgb(255, 221, 0);
-  }
-
-  .dark-mode .cecy h1 {
-    color: rgb(113, 113, 113);
-  }
-
-  .num5 img {
-    height: 80px;
-    width: 80px;
-    position: absolute;
-    top: -290%;
-    left: -85%;
-    transform: translate(-50%, -50%);
-  }
-
-
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 9%;
-    background-color: rgb(66, 66, 77);
-    color: white;
-    text-align: center;
-    z-index: 999;
-    /* Establece un índice z alto */
-    transition: height .5s ease-in-out;
-    /* Agrega una transición de altura con una duración de 0.5 segundos y un efecto ease-in-out */
-  }
-
-  .footer:hover {
-    height: 170px;
-    /* Establece la altura mayor */
-  }
-
-  .footer:hover .derechos {
-    height: 60%;
-    /* Establece la altura del elemento "derechos" al 100% */
-  }
-
-  .br-contactos {
-    margin-left: -7%;
-    margin-top: 0px;
-  }
-
-
-
-  .derechos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-
-
-
-
-
-
-  .copyright label {
-    font-size: 12px;
-    margin-left: 2%;
-    /* Determina la posicion del txt copyright junto con los botones  */
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    white-space: nowrap;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background: transparent;
-    min-width: 160px;
-    white-space: nowrap;
-    top: 40px;
-    /* determina la distancia en horizontal los correos */
-    right: 0;
-    left: -45px;
-    /* Se agrega el apartado de la distancia los correos con el contactanos */
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: inline-block;
-  }
-
-  .dropbtn {
-    background-color: inherit;
-    color: rgb(81, 255, 0);
-    padding: 0;
-    border: none;
-    height: 61px;
-    cursor: pointer;
-    font-size: 16px;
-    /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
-  }
-
-  .dropdown-content a {
-    color: rgb(255, 255, 255);
-    padding: 18px 12px;
-    /* Determina el tamano del button del los correos */
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
-  }
-
-
-
-  /* Estilos para el encabezado */
-  .title {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-top: -5%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* VISION PARA DISPOSITIVOS MOVILES */
 
 
-@media screen and (min-width: 380px) and (max-width: 491px) {
+
+@media screen and (min-width: 360px) and (max-width: 720px) {
   /*     body {
-          text-align: center;
-          background-image: url("https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/images/CUAUTITL%C3%81N.jpg");
-          background-size: 700px 703px; */
+        text-align: center;
+        background-image: url("https://cecytem.edomex.gob.mx/sites/cecytem.edomex.gob.mx/files/images/CUAUTITL%C3%81N.jpg");
+        background-size: 700px 703px; */
   /*  background-position: -50px 0px;
-          background-repeat: no-repeat; */
+        background-repeat: no-repeat; */
   /* } 
-       background-position: center;
-          margin-top: 45%;
-      */
-
-
+     background-position: center;
+        margin-top: 45%;
+    */
 
   body {
     height: 187vh;
   }
 
 
+
   .name {
     font-size: 18px;
     padding-top: 15px;
-  }
-
-  .section {
-    height: 45.2%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-  }
-
-
-  /* Estilos para el encabezado */
-  .title {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-top: -15%;
   }
 
   .centrar {
@@ -634,15 +31,15 @@
 
   .ecologia {
 
-    width: 45%;
+    width: 190px;
     height: 250px;
     background: rgba(128, 128, 128, 0.689);
     position: absolute;
     justify-content: center;
     text-align: center;
-    top: 155%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-108%, 280%);
     border-radius: 25px;
   }
 
@@ -692,7 +89,6 @@
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
-    display: none;
   }
 
   .spam-ecologia img {
@@ -721,14 +117,14 @@
 
 
   .calculo {
-    width: 45%;
+    width: 190px;
     height: 250px;
     background: rgba(128, 128, 128, 0.689);
     position: absolute;
     text-align: center;
-    top: 117%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-108%, 175%);
     border-radius: 25px;
 
   }
@@ -775,7 +171,6 @@
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
-    display: none;
   }
 
   .spam-calculo img {
@@ -802,14 +197,14 @@
 
   .ingles {
 
-    width: 45%;
+    width: 190px;
     height: 250px;
     background: rgba(128, 128, 128, 0.689);
     position: absolute;
     text-align: center;
-    top: 155%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, 280%);
     border-radius: 25px;
 
   }
@@ -856,7 +251,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -150%);
 
   }
 
@@ -876,7 +271,6 @@
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
-    display: none;
   }
 
   .spam-ingles img {
@@ -903,14 +297,15 @@
   /* fisica */
 
   .fisica {
-    width: 45%;
+
+    width: 190px;
     height: 250px;
     background: rgba(128, 128, 128, 0.689);
     position: absolute;
     text-align: center;
-    top: 117%;
-    left: 75%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, 175%);
     border-radius: 25px;
 
   }
@@ -959,7 +354,6 @@
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
-    display: none;
   }
 
   .spam-fisica img {
@@ -1000,61 +394,69 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 100px;
-    margin-top: -125px;
+    margin-top: 300px;
   }
 
   .equipo {
     /* Se oculta ya que en el hover de las materias se muestra los nombres de integrantes */
 
     /*     width: 420px;
-          height: 100px;
-          justify-content: center;
-          background: rgb(94, 92, 92);
-          left: 50%;
-          top: 50%;
-          position: absolute;
-          transform: translate(-50%, 100%);
-          text-align: center;
-          border-radius: 25px; */
-    display: none;
+        height: 100px;
+        justify-content: center;
+        background: rgb(94, 92, 92);
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, 100%);
+        text-align: center;
+        border-radius: 25px; */
+    display: block;
     margin-left: 235px;
-    margin-top: -20px;
+    margin-top: -120px;
     background: transparent;
   }
 
   /* ESTE ES PARA DISPOSITIVOS MOBILES */
-  .nav .container {
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-top: -250px;
-    margin-left: -280px;
+    margin-top: -500px;
+    margin-left: -250px;
   }
 
-  .nav {
-    /* DETERMINA QUE TANTO DE EFECTO HACIA ABAJO HACE, ES ELE EFECTO DEL MAUSE CUADNO BAJO LA PAGINA */
-    margin-top: 0px;
+  /* ESTE ES PARA QUE NO SE VEA EL DE PC */
+  .nav .container {
+    display: none;
   }
 
   .cecy img {
     width: 70px;
     height: 70px;
     position: absolute;
-    top: -600%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-top: -555px;
+    margin-left: -150px;
     z-index: -999;
   }
 
   .cecy h1 {
     position: absolute;
-    top: -630%;
-    left: -60%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    margin-top: -535px;
+    margin-left: -10px;
     font-size: 30px;
-    color: rgb(255, 221, 0);
+    color: white;
   }
+
+  /* 
+  .visitas {
+    margin-left: 50px;
+    margin-top: 50px;
+  } */
 
   .dark-mode .cecy h1 {
     color: rgb(113, 113, 113);
@@ -1064,9 +466,11 @@
     height: 80px;
     width: 80px;
     position: absolute;
-    top: -200%;
-    left: -85%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    margin-left: 150px;
+    margin-top: -525px;
   }
 
 
@@ -1074,7 +478,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 12%;
+    height: 60px;
     background-color: rgb(66, 66, 77);
     color: white;
     text-align: center;
@@ -1085,21 +489,14 @@
   }
 
   .footer:hover {
-    height: 160px;
+    height: 133px;
     /* Establece la altura mayor */
   }
 
   .footer:hover .derechos {
-    height: 60%;
+    height: 20%;
     /* Establece la altura del elemento "derechos" al 100% */
   }
-
-  .br-contactos {
-    margin-left: -7%;
-    margin-top: 0px;
-  }
-
-
 
   .derechos {
     display: flex;
@@ -1115,9 +512,7 @@
 
   .copyright label {
     font-size: 12px;
-    margin-left: -28%;
-    position: absolute;
-    margin-top: 0%;
+    margin-left: 0px;
     /* Determina la posicion del txt copyright junto con los botones  */
   }
 
@@ -1134,10 +529,10 @@
     background: transparent;
     min-width: 160px;
     white-space: nowrap;
-    top: 40px;
+    top: 50px;
     /* determina la distancia en horizontal los correos */
     right: 0;
-    left: -45px;
+    left: -345px;
     /* Se agrega el apartado de la distancia los correos con el contactanos */
   }
 
@@ -1166,7 +561,16 @@
     /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
   }
 
+  .section {
+    height: 87.8vh;
+  }
 
+  /* Estilos para el encabezado */
+  .title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 50px;
+  }
 
 }
 
@@ -1194,7 +598,7 @@
 
 /* Dispositivos mas chicos */
 
-@media screen and (min-width: 399px) and (max-width: 794px) {
+@media screen and (min-width: 399px) and (max-width: 694px) {
 
 
   body {
@@ -1584,15 +988,15 @@
     /* Se oculta ya que en el hover de las materias se muestra los nombres de integrantes */
 
     /*     width: 420px;
-        height: 100px;
-        justify-content: center;
-        background: rgb(94, 92, 92);
-        left: 50%;
-        top: 50%;
-        position: absolute;
-        transform: translate(-50%, 100%);
-        text-align: center;
-        border-radius: 25px; */
+      height: 100px;
+      justify-content: center;
+      background: rgb(94, 92, 92);
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, 100%);
+      text-align: center;
+      border-radius: 25px; */
     display: block;
     margin-left: 235px;
     margin-top: -20px;
@@ -1600,13 +1004,14 @@
   }
 
   /* ESTE ES PARA DISPOSITIVOS MOBILES */
-  .nav .container {
+  .nav .containerr{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     height: 100vh;
     margin-top: -250px;
-    margin-left: -280px;
+    margin-left: -40%;
   }
 
   .nav {
@@ -1621,7 +1026,7 @@
     top: 50%;
     left: 50%;
     margin-top: -710px;
-    margin-left: -150px;
+    margin-left: -160px;
     z-index: -999;
   }
 
@@ -1630,9 +1035,14 @@
     top: 50%;
     left: 50%;
     margin-top: -685px;
-    margin-left: -10px;
+    margin-left: -20px;
     font-size: 30px;
     color: rgb(255, 221, 0);
+  }
+
+  .visitas {
+    margin-left: -300px;
+    margin-top: -100em;
   }
 
   .dark-mode .cecy h1 {
@@ -1655,7 +1065,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 7.5%;
+    height: 60px;
     background-color: rgb(66, 66, 77);
     color: white;
     text-align: center;
@@ -1665,19 +1075,20 @@
     /* Agrega una transición de altura con una duración de 0.5 segundos y un efecto ease-in-out */
   }
 
-  .footer:hover .dropdown-content{
-    display: inline-block;
-    height: 160px;
+  .footer:hover {
+    height: 133px;
     /* Establece la altura mayor */
   }
 
-
-  .br-contactos {
-    margin-left: -7%;
-    margin-top: 0px;
+  .footer:hover .derechos {
+    height: 20%;
+    /* Establece la altura del elemento "derechos" al 100% */
   }
 
-
+  .br-contactos {
+    margin-left: 0px;
+    margin-top: -10px;
+  }
 
   .derechos {
     display: flex;
@@ -1693,9 +1104,7 @@
 
   .copyright label {
     font-size: 12px;
-    margin-left: -28%;
-    position: absolute;
-    margin-top: 0%;
+    margin-left: 0px;
     /* Determina la posicion del txt copyright junto con los botones  */
   }
 
@@ -1712,16 +1121,20 @@
     background: transparent;
     min-width: 160px;
     white-space: nowrap;
-    top: 40px;
+    top: 50px;
     /* determina la distancia en horizontal los correos */
     right: 0;
-    left: -45px;
+    left: -345px;
     /* Se agrega el apartado de la distancia los correos con el contactanos */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
   }
 
   .dropbtn {
     background-color: inherit;
-    color: rgb(255, 208, 0);
+    color: rgb(81, 255, 0);
     padding: 0;
     border: none;
     height: 61px;
@@ -1730,7 +1143,15 @@
     /* DETERMINA EL TAMANO DEL CONTACTANOS DEL TEXTO  */
   }
 
-
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 18px 12px;
+    /* Determina el tamano del button del los correos */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    /* DETERMINA EL TAMANO DEL TEXTO QUE ESTA EN EL BUTTON */
+  }
 
   .section {
     height: 87.8vh;
