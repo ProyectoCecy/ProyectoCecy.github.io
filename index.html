@@ -20,7 +20,7 @@
 
   <?php
   // esto sólo va en la página principal
-  require_once 'visitas.php';
+  require_once './Visitantes/visitas.php';
   ?>
 
   <section class="section">
@@ -91,9 +91,9 @@
 
   </nav>
 
-  <p class="visitas">Este sitio ha sido visitado
+  <p class="visitas">Este sitio fue visitado por ti:
     <?php
-    require_once 'visitas.php';
+    require_once './Visitantes/ponerVisitantes.php';
     ?>
   </p>
 
@@ -150,7 +150,6 @@
         <h1 class="name">Calculo Diferencial</h1>
 
 
-
       </form>
 
       <!--     <div class="spam-calculo">
@@ -173,7 +172,6 @@
         <h1 class="name">English</h1>
 
         <!--   <a href="./ingles/ingles.html"><input class="btn3 centrar" id="ingles-button" type="button" value="Enter"></a> -->
-
 
       </form>
 
@@ -225,7 +223,7 @@
   </div>
 
   <div id="loginModal" class="modal">
-    <div class="modal-content">
+    <div class="modal-contentt">
       <h2>¿Deseas iniciar sesión?</h2>
       <button class="iniciar" onclick="iniciarSesion()">Sí</button>
       <button class="cancelar" id="cancelar" onclick="cancelar()">Cancelar</button>
@@ -233,60 +231,71 @@
   </div>
 
 
-  <div id="register" style="display: none;">
 
-    <div class="custom-section" id="custom-section">  
-      <div class="contenedor">
-        <div class="row full-height justify-content-center">
-          <div class="col-12 text-center align-self-center py-5">
-            <div class="custom-section pb-5 pt-5 pt-sm-2 text-center">
-              <h6 class="mb-0 pb-3" style="/* margin-left: -50%; position: absolute; margin-top: 50%; */"><span>Log In</span><span>Sign Up</span></h6>
-              <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"  style="margin-left: -150%; position: absolute; margin-top: 50%;" />
-              <label for="reg-log"></label>
-              <div class="card-3d-wrap mx-auto">
-                <div class="card-3d-wrapper">
-                  <div class="card-front">
-                    <div class="center-wrap">
-                      <div class="custom-section text-center">
-                        <h4 class="mb-4 pb-3">Log In</h4>
+  <!-- AQUI EMPIEZA EL FORMULARIO -->
+  <div id="register" style="display: none;">
+  <div class="custom-section" id="custom-section">
+    <div class="contenedor">
+      <div class="row full-height justify-content-center">
+        <div class="col-12 text-center align-self-center py-5">
+          <div class="custom-section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3" style="color: rgb(0, 0, 0);">
+              <span>Inicio de sesión</span><span>Registro</span>
+            </h6>
+            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" style="margin-left: -150%; position: absolute; margin-top: 50%;" />
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+              <div class="card-3d-wrapper">
+                <div class="card-front">
+                  <div class="center-wrap">
+                    <div class="custom-section text-center">
+                      <h4 class="mb-4 pb-3">Inicio de Sesión</h4>
+
+                      <form action="./login/login.php" method="post">
+
                         <div class="form-group">
-                          <input type="email" class="form-style" placeholder="Email">
+                          <input type="email" class="form-style" placeholder="Correo electrónico" name="email">
                           <i class="input-icon uil uil-at"></i>
                         </div>
+
                         <div class="form-group mt-2">
-                          <input type="password" class="form-style" placeholder="Password">
+                          <input type="password" class="form-style" placeholder="Contraseña" name="passwordd">
                           <i class="input-icon uil uil-lock-alt"></i>
                         </div>
-                        <a href="https://www.web-leb.com/code" class="btn mt-4" style="color: white;">Login</a>
-                        <p class="mb-0 mt-4 text-center"><a href="https://www.web-leb.com/code" class="link">Forgot your
-                            password?</a></p>
-                      </div>
+
+                        <button type="submit" class="btnform mt-4" name="login" style="color: white;">Iniciar Sesión</button>
+                      </form>
+
                     </div>
                   </div>
-                  <div class="card-back">
-                    <div class="center-wrap">
-                      <div class="custom-section text-center">
-                        <form action="register.php" method="post">
-                          <h4 class="mb-3 pb-3">Sign Up</h4>
-                          <div class="form-group">
-                            <input type="text" class="form-style" placeholder="Full Name" name="name">
-                            <i class="input-icon uil uil-user"></i>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="tel" class="form-style" placeholder="Phone Number" name="phone">
-                            <i class="input-icon uil uil-phone"></i>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="email" class="form-style" placeholder="Email" name="email">
-                            <i class="input-icon uil uil-at"></i>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="password" class="form-style" placeholder="Password" name="pass">
-                            <i class="input-icon uil uil-lock-alt"></i>
-                          </div>
-                          <button type="submit" class="btnform mt-4" name="send" style="color: white;">Register</button>
-                        </form>
-                      </div>
+                </div>
+
+                <!-- REGISTROS DE DATOS -->
+
+                <div class="card-back">
+                  <div class="center-wrap">
+                    <div class="custom-section text-center">
+                      <h4 class="mb-3 pb-3">Regístrate</h4>
+                      <form action="./login/registro.php" method="post">
+
+                        <div class="form-group">
+                          <input type="text" class="form-style" placeholder="Nombre Completo" name="name">
+                          <i class="input-icon uil uil-user"></i>
+                        </div>
+
+                        <div class="form-group mt-2">
+                          <input type="email" class="form-style" placeholder="Correo Electrónico" name="email">
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+
+                        <div class="form-group mt-2">
+                          <input type="password" class="form-style" placeholder="Contraseña" name="pass">
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+
+                        <button type="submit" class="btnform mt-4" name="send" style="color: white;">Meter Registro</button>
+                      </form>
+
                     </div>
                   </div>
                 </div>
@@ -296,6 +305,8 @@
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 
 
@@ -318,12 +329,14 @@
         <div class="dropdown">
           <input type="button" class="dropbtn" value="contáctanos">
           <div class="dropdown-content">
-            <a href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge Daniel</a>
-            <a href="mailto:support@example.com">Milton Daniel</a> <!-- <br> -->
+            <a style="text-decoration: none; color: white;" href="mailto: gaqj061114hdfrnra5@soycecytem.mx">Jorge
+              Daniel</a>
+            <a style="text-decoration: none; color: white;" href="mailto:support@example.com">Milton Daniel</a>
+            <!-- <br> -->
             <!--  Para que se vea en el dispositivo mobile -->
             <div class="br-contactos">
-              <a href="mailto:sales@example.com">Cesar Enrique</a>
-              <a href="mailto:sales@example.com">Melisa Aranza</a>
+              <a style="text-decoration: none; color: white;" href="mailto:sales@example.com">Cesar Enrique</a>
+              <a style="text-decoration: none; color: white;" href="mailto:sales@example.com">Melisa Aranza</a>
             </div>
           </div>
         </div>
@@ -341,7 +354,7 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
 
   <?php
-  require_once 'cerrar.php';
+  require_once './Visitantes/cerrar.php';
   ?>
 
 </body>

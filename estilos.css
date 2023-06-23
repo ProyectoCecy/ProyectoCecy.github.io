@@ -117,12 +117,13 @@ body {
 }
 
 .cecy h1 {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    margin-top: -10px;
-    margin-left: 430px;
+    margin-top: -230px;
+    margin-left: 570px;
     font-size: 38px;
+    color: rgb(255, 0, 0);
 }
 
 
@@ -289,6 +290,8 @@ body {
     font-size: 15px;
     color: rgb(255, 255, 255);
 }
+
+/* CLASE DEL CODIGO BASE DE DATOS PARA SABER CUANTAS VECES EH ENTRADO A LA PAGINA */
 
 .visitas {
     position: absolute;

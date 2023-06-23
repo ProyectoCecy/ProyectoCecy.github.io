@@ -572,6 +572,8 @@
     margin-top: 50px;
   }
 
+  
+
 }
 
 
@@ -624,7 +626,7 @@
     position: absolute;
     justify-content: center;
     text-align: center;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-108%, 280%);
     border-radius: 25px;
@@ -709,7 +711,7 @@
     background: rgba(128, 128, 128, 0.689);
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-108%, 175%);
     border-radius: 25px;
@@ -745,7 +747,7 @@
 
   .spam-calculo {
     position: fixed;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin-left: 0%;
@@ -789,7 +791,7 @@
     background: rgba(128, 128, 128, 0.689);
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(5%, 280%);
     border-radius: 25px;
@@ -890,7 +892,7 @@
     background: rgba(128, 128, 128, 0.689);
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(5%, 175%);
     border-radius: 25px;
@@ -1004,7 +1006,7 @@
   }
 
   /* ESTE ES PARA DISPOSITIVOS MOBILES */
-  .nav .containerr{
+  .nav .containerr {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1041,8 +1043,9 @@
   }
 
   .visitas {
-    margin-left: -300px;
-    margin-top: -100em;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: -40em;
   }
 
   .dark-mode .cecy h1 {
@@ -1104,7 +1107,7 @@
 
   .copyright label {
     font-size: 12px;
-    margin-left: 0px;
+    margin-left: -15px;
     /* Determina la posicion del txt copyright junto con los botones  */
   }
 
@@ -1163,5 +1166,41 @@
     line-height: 1.2;
     margin-top: 50px;
   }
+
+
+
+
+
+  .modal-contentt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 90%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    /* Agrega sombra */
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  #register {
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: initial;
+}
+
+
+
+.card-3d-wrap {
+    width: 10px; /* Cambia el tamaño del contenedor al 90% del ancho disponible */
+    max-width: 400px; /* Establece un máximo para evitar que el formulario se vuelva demasiado ancho en dispositivos grandes */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    margin-top: 30px;
+}
 
 }

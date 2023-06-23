@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-.dark-mode .modal-content h2 {
+.dark-mode .modal-contentt h2 {
     color: black;
 }
 
@@ -32,12 +32,13 @@
     background-color: rgba(0, 0, 0, 0.863);
 }
 
-.modal-content {
+.modal-contentt {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+/*     width: 30%; */
     padding: 30px 50px;
     border-radius: 5px;
     text-align: center;
@@ -46,18 +47,18 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.modal-content:hover {
+.modal-contentt:hover {
     transform: translate(-50%, -50%) scale(1.05);
     /* Escala al hacer hover */
 }
 
-.modal-content h2 {
+.modal-contentt h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.modal-content button {
+.modal-contentt button {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
@@ -68,36 +69,36 @@
 }
 
 
-.modal-content button.cancelar {
+.modal-contentt button.cancelar {
     background-color: #000;
     color: #fff;
     box-shadow: 0 0 0 2px #000;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.modal-content button.cancelar:hover {
+.modal-contentt button.cancelar:hover {
     background-color: #f00;
     box-shadow: 0 0 0 2px #f00;
 }
 
-.modal-content button.cancelar:active {
+.modal-contentt button.cancelar:active {
     background-color: #f00;
     box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.2);
 }
 
-.modal-content button.iniciar {
+.modal-contentt button.iniciar {
     background-color: #000;
     color: #fff;
     box-shadow: 0 0 0 2px #000;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.modal-content button.iniciar:hover {
+.modal-contentt button.iniciar:hover {
     background-color: #0f0;
     box-shadow: 0 0 0 2px #0f0;
 }
 
-.modal-content button.iniciar:active {
+.modal-contentt button.iniciar:active {
     background-color: #0f0;
     box-shadow: 0 0 0 4px rgba(0, 255, 0, 0.2);
 }
@@ -125,14 +126,14 @@
     text-decoration: none;
 }
 
-.link {
+/* .link {
     color: #ffeba7;
 }
 
 .link:hover {
     color: #c4c3ca;
 }
-
+ */
 .text-center p {
     font-weight: 500;
     font-size: 14px;
@@ -140,11 +141,29 @@
 
 .text-center h4 {
     font-weight: 600;
+    /* COLOR DEL TITULO DE LOGIN O REGISTER */
+    background-color: rgba(0, 0, 0, 0.567);
+    color: white;
 }
+
+@keyframes decoration {
+    0% {
+      background-position: 0%;
+    }
+  
+    100% {
+      background-position: 400%;
+    }
+  }
 
 .text-center h6 span {
     padding: 0 20px;
     font-weight: 700;
+}
+
+/* CON ESTO HACE QUE AL ESTAR EL TEMA EN OSCURO, LAS LETRAS SE PONGAN EN BLANCO AL ESCOJER QUE FORMULARIO PONER */
+.dark-mode .text-center h6 span{
+    color: white;
 }
 
 
@@ -164,13 +183,15 @@
     display: none;
 }
 
+/* CON ESTE SE MUEVE EL CHECK BOX DONDE SE ESCOJERA QUE FORMULARIO PONER */
 .checkbox:checked+label,
 .checkbox:not(:checked)+label {
     position: relative;
     display: block;
     text-align: center;
-    width: 60px;
+    width: 70px;
     height: 16px;
+    left: 20px;
     border-radius: 8px;
     padding: 0;
     margin: 10px auto;
@@ -178,6 +199,13 @@
     background-color: #ffeba7;
 }
 
+/* ESTO HACE QUE AL ESTAR EL TEMA EN OSCURO, SE PONGA EL COLOR EN EL QUE SE ESCOGIO */
+.dark-mode .checkbox:checked+label,
+.dark-mode .checkbox:not(:checked)+label{
+    background-color: #162436;
+}
+
+/* CON ESTE SE ESCOJE EL COLOR ETC DE LA FLECHITA QUE ESTA EN EL CHECKBOX */
 .checkbox:checked+label:before,
 .checkbox:not(:checked)+label:before {
     position: absolute;
@@ -185,8 +213,8 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    color: #ffeba7;
-    background-color: #020305;
+    background-color: rgb(9, 9, 9);
+    color: rgb(255, 255, 255);
     font-family: 'unicons';
     content: '\eb4f';
     z-index: 20;
@@ -198,6 +226,15 @@
     transition: all 0.5s ease;
 }
 
+/* CON ESTE SE HACE LO MISMO QUE EL DE ARRIBA PERO CON EL TEMA EN OSCURO */
+/* EL PRIMERO ANTES DE LA COMA ESCOJE EL COLOR DE INICIO DE SESION, EL SEGUNDO ES EL DE REGISTER */
+.dark-mode .checkbox:checked+label:before,
+.dark-mode .checkbox:not(:checked)+label:before{
+    color: #ffffff;
+    background-color: #0088ff;
+
+}
+
 .checkbox:checked+label:before {
     transform: translateX(44px) rotate(-270deg);
 }
@@ -205,7 +242,8 @@
 .card-3d-wrap {
     position: relative;
     width: 440px;
-    max-width: 100%;
+    /* CON EL MAX-WIDTH SE QUITA YA QUE EN LOS TELEFONOS NO SE PUEDE MODIFICAR YA QUE TIENE ESTAS MEDIDAS PUESTAS */
+/*     max-width: 100%; */
     height: 400px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -224,10 +262,11 @@
 
 .card-front,
 .card-back {
+    /* CON ESTO DETERMINA EL TAMANO DEL FONDO DONDE ESTAN LOS INPUT DE CADA DATO */
     width: 100%;
-    height: 100%;
+    height: 105%;
     background-color: #2b2e38;
-    background-image: url('../img/imagen-login.jpeg');
+    background-image: url('../img/imagen-login-telefonos.png');
     position: absolute;
     border-radius: 6px;
     -webkit-transform-style: preserve-3d;
@@ -249,6 +288,7 @@
     left: 0;
     transform: translate3d(0, -50%, 35px) perspective(100px);
     z-index: 20;
+    /* con esto hace que aparezca todo, los input, los botones etc */
     display: block;
 }
 
@@ -313,12 +353,12 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     align-items: center;
-    background-color: #ffeba7;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .btnform:hover {
     background-color: #191919;
-    color: #ffeba7;
+    color: #f9f9f9;
     box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }

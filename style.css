@@ -32,8 +32,6 @@
   color: rgb(255, 255, 255);
 }
 
-
-
 .derechos {
   transition: height 0.5s ease-in-out;
   /* Agrega una transición de altura con una duración de 0.5 segundos y un efecto ease-in-out */
@@ -48,10 +46,13 @@
 
 /* Con este br se hace un salto de linea donde se vera dos correos electronicos separados y tendran estas medidas */
 .br-contactos {
-  margin-top: -69px;
+  margin-top: -74px;
   margin-left: 452px;
 }
 
+.enlacesFooter{
+  color: rgb(0, 0, 0);
+}
 
 .agradecimiento {
   display: none;

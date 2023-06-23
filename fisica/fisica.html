@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fisica</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+
+
+    <!--     <audio autoplay id="audio">
+      <source src="music/X2Download.app - musica de espera (320 kbps).mp3" type="audio/mp3">
+      Tu navegador no soporta la etiqueta de audio.
+    </audio> -->
+
+    <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="#"><img src="../img/Fisica-logo.png" alt=""></a>
+            </div>
+
+
+
+            <div class="nombre">
+                <h3 id="nombre-texto">Creador de la pagina: Cesar Enrique</h3>
+            </div>
+
+
+            <!-- Esto no era para identicar los parciales con el titulo pero no sera necesario ya que son varios temas -->
+            <div class="title-partial">
+                <h3></h3>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="barra">
+            <!--         <input type="button" onclick="detener()" class="music" id="music" value="Detener la musica. ">
+     -->
+            <ol>
+                <ul>
+                    <li class="link">
+                        <a href="../index.html">Volver al inicio</a>
+                    </li>
+                </ul>
+            </ol>
+
+        </form>
+
+        <div class="sidebar">
+            <div class="barra2">
+                <h2>Temas de parciales</h2>
+                <div class="bars__menu" onclick="toggleTopics()">
+                    <span class="line1__bars-menu"></span>
+                    <span class="line2__bars-menu"></span>
+                    <span class="line3__bars-menu"></span>
+                </div>
+
+            </div>
+            <ul class="topics-list" id="topicsList">
+                <li>
+                    <button class="tema1 topic-button" onclick="showTopicContent('relative-clauses-content')">ley de coulomb</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- primer parcial -->
+
+        <div class="espacio-blanco" id="espacio-blanco">
+
+            <div class="colaboradores2">
+                Alumnos que colaboraron en el proyecto:
+
+                <li>Milton Daniel Contreras Coeto </li>
+                <li>Cesar Enrique Tapia Lopez</li>
+                <li>Melisa Aranza Garcia Hidalgo</li>
+                <li>Jorge Daniel Grande Quintana</li>
+            </div>
+
+
+
+
+            <div class="topic-content titulo1" id="relative-clauses-content">
+                <h3>ley de coulomb</h3>
+                <div class="caja-contenedora">
+
+                    <div class="embed ejemplo" style="background-color: rgb(210, 30, 30); color: white;">
+                        <p>La Ley de Coulomb establece que la fuerza electrostática entre dos cargas eléctricas es directamente
+                            proporcional al producto de las magnitudes de las cargas e inversamente proporcional al cuadrado de la
+                            distancia entre ellas. Matemáticamente, se expresa de la siguiente manera:</p>
+                        <p>Fuerza electrostática (F) = (constante de Coulomb) * (carga 1) * (carga 2) / (distancia^2)</p> <br>
+                    </div>
+
+
+            
+                    <div class="embed2 relative-pronoun" style="background-color: cornflowerblue; color: white;">
+                        <h2 class="">Frecuencia: ¿Qué es?</h2>
+                        <p>La frecuencia de una onda electromagnética se refiere al número de ciclos completos que se repiten en un
+                            segundo. Se mide en hercios (Hz) y determina la cantidad de veces que el campo eléctrico y magnético de
+                            la onda oscilan en un segundo. En el contexto de las ondas electromagnéticas, la frecuencia está
+                            relacionada con la energía de la onda, donde frecuencias más altas corresponden a una mayor energía.</p>
+                        <br>
+            
+                        <h2 class="">Longitud de onda: ¿Cómo se mide?</h2>
+                        <p>La longitud de onda de una onda electromagnética se refiere a la distancia entre dos puntos equivalentes
+                            en la onda, como dos crestas adyacentes o dos valles adyacentes. Se mide en metros (m) y está inversamente
+                            relacionada con la frecuencia de la onda. La fórmula para calcular la longitud de onda es:</p>
+                        <p>Longitud de onda (λ) = Velocidad de propagación (v) / Frecuencia (f)</p>
+                        <br>
+            
+                        <h2 class="">Velocidad de propagación: ¿Qué factores influyen?</h2>
+                        <p>La velocidad de propagación de las ondas electromagnéticas en el vacío es constante y se denota por la
+                            letra 'c'. En el vacío, la velocidad de propagación de la luz es de aproximadamente 299,792,458 metros
+                            por segundo (m/s). Esta velocidad no depende de la frecuencia ni de la longitud de onda de la onda
+                            electromagnética.</p>
+                        <p>Sin embargo, al propagarse en otros medios como el aire, el agua o los materiales sólidos, la velocidad de
+                            propagación de las ondas electromagnéticas puede cambiar. Factores como la densidad y composición del
+                            medio pueden influir en la velocidad de propagación de las ondas electromagnéticas en esos medios.</p>
+                    </div>
+                </div>
+            
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UgRJEdb-CoI" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+            
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://kit.fontawesome.com/bc48b26896.js" crossorigin="anonymous"></script>
+        <script src="../Code/fisica.js"></script>
+
+</body>
+
+</html>
