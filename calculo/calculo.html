@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculo</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+
+    <!--     <audio autoplay id="audio">
+      <source src="music/X2Download.app - musica de espera (320 kbps).mp3" type="audio/mp3">
+      Tu navegador no soporta la etiqueta de audio.
+    </audio> -->
+
+    <div class="header">
+        <div class="container">
+
+            <div class="logo">
+                <a href="#"><img src="../img/calculo-logo.png" alt=""></a>
+            </div>
+
+
+
+            <div class="nombre">
+                <h3 id="nombre-texto">Creador de la pagina: Melisa Aranza</h3>
+            </div>
+
+
+            <!-- Esto no era para identicar los parciales con el titulo pero no sera necesario ya que son varios temas -->
+            <div class="title-partial">
+                <h3></h3>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="barra">
+            <!--         <input type="button" onclick="detener()" class="music" id="music" value="Detener la musica. ">
+     -->
+            <ol>
+                <ul>
+                    <li class="link">
+                        <a href="../index.html">Volver al inicio</a>
+                    </li>
+                </ul>
+            </ol>
+
+        </form>
+
+        <div class="sidebar">
+            <div class="barra2">
+                <h2>Temas de parciales</h2>
+                <div class="bars__menu" onclick="toggleTopics()">
+                    <span class="line1__bars-menu"></span>
+                    <span class="line2__bars-menu"></span>
+                    <span class="line3__bars-menu"></span>
+                </div>
+
+            </div>
+            <ul class="topics-list" id="topicsList">
+                <li>
+                    <button class="tema1 topic-button" onclick="showTopicContent('relative-clauses-content')">Ondas
+                        Electromagnéticas</button>
+                </li>
+                <li>
+                    <button class="tema1 topic-button tema2"
+                        onclick="showTopicContent('present-perfect-content')">Modelación Matemática</button>
+                </li>
+                <li>
+                    <button class="tema1 topic-button"
+                        onclick="showTopicContent('present-perfect-progressive-content')">Gráficas</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- primer parcial -->
+
+        <div class="espacio-blanco" id="espacio-blanco">
+
+            <div class="colaboradores2">
+                Alumnos que colaboraron en el proyecto:
+
+                <li>Milton Daniel Contreras Coeto </li>
+                <li>Cesar Enrique Tapia Lopez</li>
+                <li>Melisa Aranza Garcia Hidalgo</li>
+                <li>Jorge Daniel Grande Quintana</li>
+            </div>
+
+
+
+
+            <div class="topic-content titulo1" id="relative-clauses-content">
+                <h3>Ondas Electromagnéticas</h3>
+                <div class="caja-contenedora">
+                    <div class="embed ejemplo">
+                        <p>Las ondas electromagnéticas son perturbaciones que se propagan a través del espacio, llevando
+                            consigo campos eléctricos y magnéticos. Estas ondas son generadas por cargas eléctricas en
+                            movimiento y se pueden clasificar en diferentes rangos según su frecuencia y longitud de
+                            onda.</p>
+                    </div>
+
+                    <div class="embed2 relative-pronoun">
+                        <h2 class="">Frecuencia: ¿Qué es?</h2>
+                        <p>La frecuencia de una onda electromagnética se refiere al número de ciclos completos que se
+                            repiten en un segundo. Se mide en hercios (Hz) y determina la cantidad de veces que el campo
+                            eléctrico y magnético de la onda oscilan en un segundo. En el contexto de las ondas
+                            electromagnéticas, la frecuencia está relacionada con la energía de la onda, donde
+                            frecuencias más altas corresponden a una mayor energía.</p> <br>
+
+                        <h2 class="">Longitud de onda: ¿Cómo se mide?</h2>
+                        <p>La longitud de onda de una onda electromagnética se refiere a la distancia entre dos puntos
+                            equivalentes en la onda, como dos crestas adyacentes o dos valles adyacentes. Se mide en
+                            metros (m) y está inversamente relacionada con la frecuencia de la onda. La fórmula para
+                            calcular la longitud de onda es:</p>
+                        <p>Longitud de onda (λ) = Velocidad de propagación (v) / Frecuencia (f)</p> <br>
+
+                        <h2 class="">Velocidad de propagación: ¿Qué factores influyen?</h2>
+                        <p>La velocidad de propagación de las ondas electromagnéticas en el vacío es constante y se
+                            denota por la letra 'c'. En el vacío, la velocidad de propagación de la luz es de
+                            aproximadamente 299,792,458 metros por segundo (m/s). Esta velocidad no depende de la
+                            frecuencia ni de la longitud de onda de la onda electromagnética.</p>
+                        <p>Sin embargo, al propagarse en otros medios como el aire, el agua o los materiales sólidos, la
+                            velocidad de propagación de las ondas electromagnéticas puede cambiar. Factores como la
+                            densidad y composición del medio pueden influir en la velocidad de propagación de las ondas
+                            electromagnéticas en esos medios.</p>
+
+
+                    </div>
+                </div>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OuP0MHdy-Iw" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+            <div class="topic-content titulo2" id="present-perfect-content">
+                <h3>Modelación Matemática</h3>
+
+                <div class="caja-contenedora">
+                    <div class="embed ejemplo" style="background-color: gray; color: white;">
+                        <p>La modelación matemática es una herramienta fundamental en diversas áreas del conocimiento
+                            para comprender y predecir fenómenos del mundo real. Consiste en utilizar conceptos y
+                            técnicas matemáticas para representar y analizar situaciones reales, permitiendo obtener
+                            conclusiones y tomar decisiones informadas.</p>
+                    </div>
+
+                    <div class="embed2 relative-pronoun" style="background-color: rgb(102, 255, 0);">
+                        <h2 class="">Modelación Matemática: ¿Qué es?</h2>
+                        <p>La modelación matemática es el proceso de crear representaciones matemáticas de fenómenos del
+                            mundo real.
+                            Consiste en utilizar ecuaciones, fórmulas y otros métodos matemáticos para describir y
+                            analizar situaciones
+                            complejas. La modelación matemática permite comprender y predecir el comportamiento de
+                            sistemas físicos,
+                            sociales o naturales, lo que ayuda a tomar decisiones informadas y resolver problemas en
+                            diversas áreas.</p> <br>
+
+                        <h2 class="">Variables y Ecuaciones: ¿Cómo se utilizan?</h2>
+                        <p>En la modelación matemática, se emplean variables para representar las características o
+                            propiedades de un
+                            sistema. Estas variables pueden ser cuantitativas o cualitativas, y se utilizan para
+                            formular ecuaciones que
+                            relacionan las diferentes magnitudes involucradas en el sistema. Las ecuaciones matemáticas
+                            describen las
+                            relaciones entre las variables y permiten realizar análisis, simulaciones y predicciones
+                            sobre el sistema
+                            modelado.</p> <br>
+
+                        <h2 class="">Validación y Aplicaciones: ¿Por qué es importante?</h2>
+                        <p>La validación de un modelo matemático consiste en comparar los resultados obtenidos mediante
+                            la modelación con
+                            datos reales o con resultados experimentales. Esto permite verificar la precisión y
+                            confiabilidad del modelo,
+                            así como identificar posibles mejoras o ajustes necesarios.</p>
+                        <p>La modelación matemática tiene numerosas aplicaciones en diversos campos, como la física, la
+                            ingeniería, la
+                            economía, la biología y la epidemiología, entre otros. Permite entender fenómenos complejos,
+                            predecir
+                            comportamientos, optimizar procesos, tomar decisiones fundamentadas y desarrollar nuevas
+                            tecnologías.</p>
+                    </div>
+
+                </div>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rd2jKGQJucE" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+
+
+            <div class="topic-content titulo3" id="present-perfect-progressive-content">
+                <h3>Gráficas de Funciones en Cálculo</h3>
+                <div class="caja-contenedora">
+                    <div class="embed ejemplo" style="background-color: chocolate; color: white;">
+                        <p>Las gráficas de funciones en cálculo son representaciones visuales que muestran la relación
+                            entre una
+                            variable independiente y una variable dependiente. Estas gráficas permiten visualizar la
+                            forma y
+                            características de la curva generada por la función, lo que facilita el análisis y
+                            comprensión de
+                            conceptos fundamentales en el cálculo.</p>
+                    </div>
+
+                    <div class="embed2 relative-pronoun" style="background-color: black; color: white;">
+                        <h2 class="">Gráficas de Funciones en Cálculo: ¿Qué son?</h2>
+                        <p>En el campo de la matemática y específicamente en el cálculo, las gráficas de funciones
+                            desempeñan un
+                            papel fundamental. Las funciones son relaciones entre conjuntos de números, donde cada
+                            elemento del
+                            conjunto de entrada se asocia con un único elemento del conjunto de salida.</p>
+                        <p>Las gráficas de funciones nos permiten visualizar la relación entre la variable independiente
+                            (por lo
+                            general, representada en el eje x) y la variable dependiente (representada en el eje y). Al
+                            trazar los
+                            puntos (x, y) que satisfacen la función, podemos observar la forma y características de la
+                            curva
+                            resultante.</p> <br>
+
+
+
+                        <h2 class="">Importancia de las Gráficas de Funciones en Cálculo</h2>
+                        <p>En cálculo, el análisis de las gráficas de funciones es esencial para comprender conceptos
+                            como límites,
+                            continuidad, derivadas e integrales. Las gráficas pueden revelar información importante
+                            sobre el
+                            comportamiento de la función, como puntos críticos, asíntotas, concavidad y cambios de
+                            tendencia.</p>
+                        <p>Además, al utilizar software de gráficos o calculadoras gráficas, es posible trazar gráficas
+                            de
+                            funciones de manera más precisa y explorar diferentes rangos de valores, lo que facilita la
+                            comprensión
+                            de las propiedades y características de la función en estudio.</p> <br>
+
+
+                        <div >
+                            <h2 class="">Gráficas</h2>
+                            <div class="graficas-container">
+                                <div class="grafica">
+                                    <p><strong>f(x) = 1/2 sen(x)</strong></p>
+                                    <img src="../img/Funcion-1medio2senX.png" alt="Gráfica de f(x) = 1/2 sen(x)">
+                                </div>
+                                <div class="grafica">
+                                    <p><strong>f(x) = 3sen(x)</strong></p>
+                                    <img src="../img/Funcion-3senX.png" alt="Gráfica de f(x) = 3sen(x)">
+                                </div>
+                                <div class="grafica">
+                                    <p><strong>f(x) = cos(x)</strong></p>
+                                    <img src="../img/Funcion-cosX.png" alt="Gráfica de f(x) = cos(x)">
+                                </div>
+                                <div class="grafica">
+                                    <p><strong>f(x) = sen(x/2)</strong></p>
+                                    <img src="../img/Funcion-sen-x-2.png" alt="Gráfica de f(x) = sen(x/2)">
+                                </div>
+                                <div class="grafica">
+                                    <p><strong>f(x) = sen(3x)</strong></p>
+                                    <img src="../img/Funcion-sen3x.png" alt="Gráfica de f(x) = sen(3x)">
+                                </div>
+                                <div class="grafica">
+                                    <p><strong>f(x) = sen(x)</strong></p>
+                                    <img src="../img/Funcion-senX.png" alt="Gráfica de f(x) = sen(x)">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H40lcwlgPMk" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="https://kit.fontawesome.com/bc48b26896.js" crossorigin="anonymous"></script>
+        <script src="../Code/calculo.js"></script>
+
+</body>
+
+</html>

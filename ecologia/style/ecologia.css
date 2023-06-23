@@ -193,10 +193,10 @@ background-color: #ff5555;
 
 top: 50%;
 left: 0;
-width: 260px;
+width: 23%;
 transition: left 0.3s ease-in-out;
 margin-top: -70px;
-margin-left: 880px;
+margin-left: 76%;
 
 }
 .sidebar.show {
@@ -260,11 +260,11 @@ background-color: #aca9a9;
 }
 
 
-.topic-content video{
+.topic-content iframe{
 position: absolute;
-top: 50%;
-left: 50%;
-width: 580px;
+top: 75%;
+left: 55%;
+width: 70%;
 height: 400px;
 transform: translate(67%, -60%);
 }
@@ -273,11 +273,11 @@ transform: translate(67%, -60%);
   display: none;
   width: 730px;
   height: 620px;
-  background: white;
+  background-color: #3cff00;
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-79%, -16%);
+  transform: translate(-79%, -5%);
   justify-content: center;
   text-align: center;
 }
@@ -380,7 +380,7 @@ transform: translate(67%, -60%);
 
 
 .titulo1 .plasticos{
-transform: translate(160px, -79px);
+transform: translate(160px, -149px);
 background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
 font-size: 49px;
 background-size: 400%;
@@ -434,6 +434,74 @@ animation: animation 9s linear infinite;
     background-position: 400%;
 }
 }
+
+
+/* SEGUNDO PARCIAL */
+
+.titulo1 .plast{
+transform: translate(160px, -810px);
+background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+font-size: 49px;
+background-size: 400%;
+font-family: sans-serif;
+letter-spacing: 1px;
+font-weight: 600;
+word-spacing: 5px;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+animation: animate 10s linear infinite;
+}
+@keyframes animate{
+0%{
+    background-position: 0%;
+}
+100%{
+    background-position: 400%;
+}
+}
+
+.titulo1 img{
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(80%, -0%);
+  margin-left: 190;
+}
+
+.mensaje img{
+
+position: absolute;
+top: 120%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 90%;
+height: 200%;
+
+
+
+/* background-image: linear-gradient(to right, #000000, #b300ff,
+#ff0000, #1500ff,
+#ff0000, #0800ff);
+font-size: 15px;
+background-size: 400%;
+font-family: sans-serif;
+letter-spacing: 1px;
+font-weight: 600;
+word-spacing: 5px;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+animation: animation 9s linear infinite; */
+}
+/* @keyframes animation{
+0%{
+    background-position: 0%;
+}
+100%{
+    background-position: 400%;
+}
+} */
 
 
 /* .titulo2 .plasticos{
@@ -517,14 +585,29 @@ position: relative;
 
 }
 
+/* ESPACIO VERDE DE FONDO */
+
+
 .relative-pronoun {
 margin-bottom: -75px;
 padding: 15px;
-height: 618px;
+height: 110%;
 background-color: #3cff00;
 border: 1px solid #ddd;
 position: relative;
 }
+
+
+.relative-pronounn {
+margin-bottom: -75px;
+padding: 15px;
+height: 200%;
+background-color: #3cff00;
+border: 1px solid #ddd;
+position: relative;
+}
+
+
 .relative-pronoun h2 {
 font-size: 1.2em;
 margin-top: 0;

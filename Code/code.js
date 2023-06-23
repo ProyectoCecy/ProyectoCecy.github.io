@@ -20,38 +20,38 @@ function calculo(event) {
 
 
 
-  /*     swal({
-          title: "Los datos se han guardado correctamente!",
-          text: "Ya puedes iniciar sesion con los datos ingresados para el registro",
-          icon:"success",
-          buttons:{
-            cancel:{
-              text:"regresar para corregir datos",
-              value: false,
-              visible: true,
-              className: "",
-              closeModal: true
-            },
-              confirm:{
-              text:"Continuar",
-              value: true,
-              visible: true,
-              className: "",
-              classModal: true
-            }
+/*     swal({
+        title: "Los datos se han guardado correctamente!",
+        text: "Ya puedes iniciar sesion con los datos ingresados para el registro",
+        icon:"success",
+        buttons:{
+          cancel:{
+            text:"regresar para corregir datos",
+            value: false,
+            visible: true,
+            className: "",
+            closeModal: true
+          },
+            confirm:{
+            text:"Continuar",
+            value: true,
+            visible: true,
+            className: "",
+            classModal: true
           }
-        }).then(function(value){
-          if(value){
-            location.reload()
-          }else{
-            swal({
-              title: "NO SE A MODIFICADO NADA",
-              text: "Los datos no se han guardado, puedes modificar algun dato si es que a si lo deceas",
-              icon: "warning",
-              button: "Ok"
-            })
-          }
-        }) */
+        }
+      }).then(function(value){
+        if(value){
+          location.reload()
+        }else{
+          swal({
+            title: "NO SE A MODIFICADO NADA",
+            text: "Los datos no se han guardado, puedes modificar algun dato si es que a si lo deceas",
+            icon: "warning",
+            button: "Ok"
+          })
+        }
+      }) */
 /* }
  */
 
@@ -345,7 +345,7 @@ ecologia.addEventListener('mouseout', () => {
 
 
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   if (window.innerWidth >= 360 && window.innerWidth <= 720) {
 
     swal({
@@ -356,7 +356,7 @@ window.addEventListener('load', function() {
       buttons: false,
       dangerMode: true,
     });
-    
+
   }
 });
 
@@ -370,45 +370,29 @@ window.addEventListener('load', function() {
 /* ECOLOGIA, ENTRAR A LA MATERIA */
 
 
-document.getElementById('ecologia').addEventListener('click', function() {
+document.getElementById('ecologia').addEventListener('click', function () {
   window.location.href = "./ecologia/ecologia.html";
 });
 
 
 /* CALCULO, ENTRAR A LA MATERIA */
 
-document.getElementById('calculo1').addEventListener('click', function(event) {
-  event.preventDefault(); // Evita que se realice la redirección predeterminada
-
-  swal({
-    title: "Aviso!",
-    text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
-    icon: "info",
-    buttons: true,
-    dangerMode: true
-  });
+document.getElementById('calculo1').addEventListener('click', function () {
+  window.location.href = "./calculo/calculo.html";
 });
 
 
 /* INGLES, ENTRAR A LA MATERIA */
 
-document.getElementById('ingles').addEventListener('click', function() {
+document.getElementById('ingles').addEventListener('click', function () {
   window.location.href = "./ingles/ingles.html";
 });
 
 
 /* FISICA, ENTRAR A LA MATERIA */
 
-document.getElementById('fisica1').addEventListener('click', function(event) {
-  event.preventDefault(); // Evita que se realice la redirección predeterminada
-
-  swal({
-    title: "Aviso!",
-    text: "Lo siento, la página que está intentando acceder no se encuentra disponible en este momento. Estamos trabajando en la construcción de esta página web. Por favor, tenga paciencia mientras la finalizamos. Si cree que esto es un error, por favor contáctenos. El código de error correspondiente es el HTTP 404 (Not Found).",
-    icon: "info",
-    buttons: true,
-    dangerMode: true
-  });
+document.getElementById('fisica1').addEventListener('click', function () {
+  window.location.href = "./fisica/fisica.html";
 });
 
 
